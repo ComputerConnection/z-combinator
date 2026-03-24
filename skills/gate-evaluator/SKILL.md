@@ -1,6 +1,7 @@
 ---
-title: Gate Evaluator
-description: Evaluate founder work against Z-Combinator quality gates (1-9). Run this at each stage to score dimensions, check hard fails, and deliver verdict (PASS/REWORK/PIVOT/KILL). Triggered by "evaluate gate", "run gate", "gate check", "quality gate", "am I ready for the next stage", "evaluate my progress".
+name: gate-evaluator
+description: >
+  Evaluate founder work against Z-Combinator quality gates (1-9). Run this at each stage to score dimensions, check hard fails, and deliver verdict (PASS/REWORK/PIVOT/KILL). Triggered by "evaluate gate", "run gate", "gate check", "quality gate", "am I ready for the next stage", "evaluate my progress".
 author: Z-Combinator
 version: 1.0.0
 trigger_keywords:

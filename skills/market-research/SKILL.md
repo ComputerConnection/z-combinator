@@ -1,5 +1,5 @@
 ---
-name: Market Research
+name: market-research
 description: Adversarial competitive intelligence. Find every existing solution, map the graveyard, size the market honestly, and challenge the founder on why they'll win where others lost.
 triggers:
   - market research

@@ -1,6 +1,7 @@
 ---
-name: Business Formation & Legal Structure
-description: Guide founders through operational fundamentals — entity setup, co-founder agreements, IP assignment, banking, bookkeeping, taxes, insurance, and contractor agreements. Most technical founders skip this and regret it.
+name: business-formation
+description: >
+  Guide founders through operational fundamentals — entity setup, co-founder agreements, IP assignment, banking, bookkeeping, taxes, insurance, and contractor agreements. Most technical founders skip this and regret it.
 trigger_phrases:
   - "business formation"
   - "set up my company"

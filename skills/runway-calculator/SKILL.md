@@ -1,5 +1,5 @@
 ---
-name: Runway Calculator
+name: runway-calculator
 description: Forces honest financial planning. Calculate monthly burn rate, runway in months, revenue milestones needed to survive, and decision deadlines. This is the skill that makes founders confront reality.
 trigger_phrases:
   - "runway calculator"

@@ -1,5 +1,5 @@
 ---
-name: Customer Discovery
+name: customer-discovery
 description: Generate a customer interview playbook using The Mom Test methodology to extract truth about customer problems. Conducts adversarial challenge on interview plan and forces evidence collection before proceeding.
 trigger_phrases:
   - customer discovery

@@ -1,6 +1,7 @@
 ---
 name: performance-audit
-description: Technical performance evaluation. Tests Core Web Vitals (LCP, FID, CLS), page load times, API response times, bundle size, database query performance. Thresholds: LCP <2.5s, FID <100ms, CLS <0.1. Use before launch.
+description: >
+  Technical performance evaluation. Tests Core Web Vitals (LCP, FID, CLS), page load times, API response times, bundle size, database query performance. Thresholds: LCP <2.5s, FID <100ms, CLS <0.1. Use before launch.
 ---
 
 # Performance Audit

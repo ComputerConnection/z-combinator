@@ -1,6 +1,7 @@
 ---
 name: daily-standup
-description: Quick daily check-in summarizing what shipped, what's planned, blockers. Key feature: scope creep detection vs MVP-SPEC. Runway tracking. Use daily during build phase to keep team aligned.
+description: >
+  Quick daily check-in summarizing what shipped, what's planned, blockers. Key feature: scope creep detection vs MVP-SPEC. Runway tracking. Use daily during build phase to keep team aligned.
 ---
 
 # Daily Standup

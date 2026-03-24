@@ -1,5 +1,5 @@
 ---
-name: Evidence Review
+name: evidence-review
 description: Adversarial analysis of customer discovery evidence. Separates signal from noise, identifies confirmation bias, and assigns an evidence quality score. Brutally honest about interview quality and what needs to happen next.
 trigger_phrases:
   - review my evidence

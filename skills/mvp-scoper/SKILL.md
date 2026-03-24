@@ -1,5 +1,5 @@
 ---
-name: MVP Scoper
+name: mvp-scoper
 description: BRUTALLY cut scope to the minimum viable product. Force MoSCoW classification on every feature. Challenge every "must have." Enforce 4-6 week delivery for solo founders. Anti-feature-creep enforcer.
 trigger_phrases:
   - scope the mvp

@@ -1,5 +1,5 @@
 ---
-name: Lean Canvas
+name: lean-canvas
 description: Force a complete Lean Canvas business model with adversarial challenge on every single cell. Nine cells, each validated against your customer evidence and brutally questioned.
 trigger_phrases:
   - lean canvas

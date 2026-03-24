@@ -1,5 +1,5 @@
 ---
-name: Idea Intake
+name: idea-intake
 description: Force founders to articulate the real problem, customer, market timing, and unfair advantage before pitching anything. Pushback included.
 triggers:
   - idea intake

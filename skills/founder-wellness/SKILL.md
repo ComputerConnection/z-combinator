@@ -1,6 +1,7 @@
 ---
-name: Founder Wellness & Sustainability
-description: The sustainability check nobody wants but everyone needs. Assesses founder burnout risk, support systems, exit criteria, work-life integration, and mental health awareness. Warm but direct — this is personal.
+name: founder-wellness
+description: >
+  The sustainability check nobody wants but everyone needs. Assesses founder burnout risk, support systems, exit criteria, work-life integration, and mental health awareness. Warm but direct — this is personal.
 trigger_phrases:
   - "wellness check"
   - "am I sustainable"
