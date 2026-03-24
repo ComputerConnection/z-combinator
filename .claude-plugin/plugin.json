@@ -1,0 +1,20 @@
+{
+  "name": "z-combinator",
+  "version": "0.1.0",
+  "description": "The adversarial startup bootcamp. Takes founders from raw idea through validation, building, launching, and scaling — with hard quality gates, founder profiling, and kill points at every stage. Inspired by Y Combinator's rigor, built for solo founders and small teams.",
+  "author": {
+    "name": "Zach @ Computer Connection"
+  },
+  "keywords": [
+    "startup",
+    "founder",
+    "bootcamp",
+    "validation",
+    "mvp",
+    "launch",
+    "y-combinator",
+    "entrepreneurship",
+    "business",
+    "ideation"
+  ]
+}
