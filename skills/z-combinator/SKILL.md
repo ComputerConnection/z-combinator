@@ -34,6 +34,11 @@ triggers:
   - "kill or move forward"
   - "my bootcamp status"
 type: orchestrator
+benefits-from: []
+feeds-into:
+  - founder-onboarding
+  - idea-intake
+  - gate-evaluator
 ---
 
 # Z-Combinator: The Master Orchestrator
@@ -52,134 +57,166 @@ You are here because you have a founder instinct and an idea worth testing. This
 - **Move fast but not recklessly** — each stage has purpose
 - **Be honest about failure** — early failure saves years
 
-## How to Use This Skill
+## Phase 0: Entry Point Assessment
 
-This is the **single entry point** for the entire bootcamp. You'll interact with it at key moments:
+When you trigger this skill, I need to determine your starting state. This is quick.
 
-1. **"start the bootcamp"** — First time? I'll set up your founder profile and begin Stage 1.
-2. **"status" / "where am i"** — Show your current stage, artifacts, gate scores, and what's next.
-3. **"next"** — Move to the next skill in your current stage.
-4. **"evaluate" / "gate check"** — Run the quality gate for your current stage.
-5. **"go back"** — Return to a previous stage (with reflection on why).
-6. **"restart stage"** — Start your current stage over from the beginning.
-7. **"kill check"** — Force an honest assessment: should we continue, pivot, or shut down?
+**Your action:** Tell me one of the following:
+- "I'm brand new, start the bootcamp" — First time? I'll send you to founder-onboarding
+- "I'm returning" — I'll read your FOUNDER-PROFILE and PIPELINE-STATE to show your status
+- "Status check" — Show me where I am right now
+- "Next" — Move me to the next skill in my current stage
+- "Evaluate" — Run the quality gate for my current stage
 
-## The Pipeline: 10 Stages
+Use AskUserQuestion to determine which path:
 
-Your journey has 10 stages. Each has specific skills, artifacts, and a hard gate. Here's the flow:
+**Re-ground:** You're about to enter (or re-enter) Z-Combinator, a 10-stage startup pipeline with hard quality gates at each stage. Before we proceed, I need to know your starting point.
+
+**Simplify:** Are you brand new to the bootcamp, or are you returning to continue where you left off? If you're new, we'll start with a founder profile interview. If you're returning, I'll show you exactly where you are in the pipeline and what's next.
+
+**Recommend:** If you're new: Choose "start the bootcamp" — this takes 90 minutes but sets up everything we'll need. Completeness: 10/10 for new founders. If you're returning: Choose "status" — this is instant and gets you back on track. Completeness: 10/10 for returning founders.
+
+**Options:**
+- A) "I'm brand new, start the bootcamp" — First time here? Let's build your founder profile and begin Stage 1.
+- B) "I'm returning and want to continue" — I'll read your profile and pipeline state, show your current stage, and what's next.
+- C) "Just show me my status" — Quick summary of where you are, what you've completed, and what's due next.
+
+## Phase 1: Process Your Entry Choice
+
+Based on your Phase 0 answer, execute:
+
+**If "brand new":**
+- Route to **founder-onboarding** skill
+- This produces FOUNDER-PROFILE.md and FOUNDER-PRESCRIPTION.md
+- Duration: 90 minutes
+- Return here after completion
+
+**If "returning":**
+- Read FOUNDER-PROFILE.md (if exists)
+- Read PIPELINE-STATE.md (if exists)
+- Execute Phase 2 below
+
+**If "status check":**
+- Execute Phase 2 below
+
+---
+
+## Phase 2: Pipeline State & Routing
+
+Read the files:
+- `/FOUNDER-PROFILE.md` (who they are)
+- `/PIPELINE-STATE.md` (where they are)
+
+Construct a status summary:
+
+```
+PROJECT: [Idea Name]
+FOUNDER: [Name]
+CURRENT STAGE: [1-10 or "incomplete profile"]
+ARTIFACTS: [list what exists]
+LAST GATE SCORE: [if applicable]
+BOTTLENECK: [what's blocking forward progress]
+NEXT ACTION: [which skill]
+```
+
+Use AskUserQuestion to confirm they want to proceed:
+
+**Re-ground:** You're at Stage [X] of the 10-stage Z-Combinator pipeline. [Brief recap of what this stage is about and your current status].
+
+**Simplify:** Based on your profile and current stage, here's what's next: [describe 1-2 sentence what the next skill or gate does].
+
+**Recommend:** RECOMMENDATION: [Move to next skill / Re-run gate / Go back and rework] because [one reason]. This will take [X hours/days].
+
+**Options:**
+- A) [Next skill name] — [What it does, duration]
+- B) [Alternative action] — [Why this might make sense, duration]
+- C) [If appropriate] "I'd like to check on something first" — [Specific clarification question]
+
+---
+
+## Phase 3: Execute Routing
+
+Based on their Phase 2 choice, route to the next skill:
+
+**Stage 1: Is This Worth Building?**
+- Current: idea-intake → market-research → [evaluation]
+- Gate: gate-evaluator (Stage 1)
+- Next skill: idea-intake (if starting) or market-research (if idea-intake done)
+
+**Stage 2: Will Anyone Pay?**
+- Current: customer-discovery → evidence-review → [evaluation]
+- Gate: gate-evaluator (Stage 2)
+- Next skill: customer-discovery (if not done) or evidence-review (if interviews done)
+
+**Stage 3-10:** [Follow the same pattern — identify current skill, then route to next]
+
+---
+
+## Full Pipeline Map (Reference)
 
 ### **Stage 1: Is This Worth Building?**
 *Does the world need this? Is there a real problem?*
-
-- **Skills**: idea-intake → office-hours → market-research → plan-shark-tank
-- **Artifacts**: IDEA-STATEMENT.md, MARKET-ANALYSIS.md, COMPETITIVE-LANDSCAPE.md
-- **Gate**: Gate Evaluator (Stage 1)
-- **Decision**: Proceed, pivot idea, or kill
+- Skills: idea-intake → market-research
+- Gate: gate-evaluator (Stage 1) — Pass: 60+ | Kill: <40
+- Artifacts: INTAKE.md, MARKET-RESEARCH.md
 
 ### **Stage 2: Will Anyone Pay?**
 *Can you find customers? Will they spend money?*
-
-- **Skills**: customer-discovery → [real interviews pause] → evidence-review → plan-shark-tank (round 2)
-- **Artifacts**: CUSTOMER-INTERVIEWS.md, DEMAND-EVIDENCE.md, PRICING-STRATEGY.md
-- **Gate**: Gate Evaluator (Stage 2)
-- **Decision**: Proceed, pivot customer segment, or kill
+- Skills: customer-discovery → evidence-review
+- Gate: gate-evaluator (Stage 2) — Pass: 70+ | Kill: <45
+- Artifacts: EVIDENCE-LOG.md, DEMAND-EVIDENCE.md
 
 ### **Stage 3: What's the MVP?**
-*Strip it to the essentials. What's the minimum product that proves the core hypothesis?*
-
-- **Skills**: lean-canvas → mvp-scoper → plan-ceo-review (SCOPE REDUCTION mode) → plan-cfo-review → plan-sales-review
-- **Artifacts**: LEAN-CANVAS.md, MVP-SPEC.md, SCOPE-CONSTRAINTS.md, RESOURCE-PLAN.md
-- **Gate**: Gate Evaluator (Stage 3)
-- **Decision**: Proceed with scope, reduce further, or kill
+*Strip it to essentials. What's the minimum that proves the core hypothesis?*
+- Skills: lean-canvas → mvp-scoper
+- Gate: gate-evaluator (Stage 3) — Pass: 70+
+- Artifacts: LEAN-CANVAS.md, MVP-SPEC.md, SCOPE-CONSTRAINTS.md
 
 ### **Stage 4: Architecture**
-*How will you build it? What are the technical, design, security, and operational foundations?*
-
-- **Skills**: tech-stack-advisor → design-consultation → plan-eng-review → plan-design-review → plan-security-review → plan-legal-review → plan-ops-review
-- **Artifacts**: TECH-STACK.md, ARCHITECTURE.md, SECURITY-PLAN.md, LEGAL-STRUCTURE.md, OPS-PLAN.md
-- **Gate**: Gate Evaluator (Stage 4)
-- **Decision**: Proceed, redesign, or kill
+*How will you build it? Technical, design, security, operational foundations.*
+- Skills: tech-stack-advisor → [design consultation and reviews]
+- Gate: gate-evaluator (Stage 4) — Pass: 75+
+- Artifacts: ARCHITECTURE.md, TECH-STACK.md, SECURITY-PLAN.md
 
 ### **Stage 5: Operations**
-*Can you actually run this business? Legal, financial, and founder wellness.*
-
-- **Skills**: business-formation → runway-calculator → founder-wellness → plan-support-review
-- **Artifacts**: BUSINESS-FORMATION.md, RUNWAY-ANALYSIS.md, FOUNDER-HEALTH-CHECK.md, SUPPORT-STRUCTURE.md
-- **Gate**: Gate Evaluator (Stage 5)
-- **Decision**: Proceed, adjust runway/structure, or kill
+*Can you actually run this business? Legal, financial, founder wellness.*
+- Skills: business-formation → runway-calculator
+- Gate: gate-evaluator (Stage 5) — Pass: 65+
+- Artifacts: BUSINESS-STRUCTURE.md, FINANCIAL-MODEL.md
 
 ### **Stage 6: Build**
-*Execute the MVP. Daily standups, sprint planning, careful progress tracking.*
-
-- **Skills**: sprint-planner → daily-standup → careful/guard/investigate → review/codex → sprint-retro
-- **Artifacts**: SPRINT-PLANS.md, DAILY-LOGS.md, BUILD-PROGRESS.md, CODE-QUALITY.md
-- **Gate**: Gate Evaluator (Stage 6)
-- **Decision**: Continue building, reprioritize, or kill
+*Execute the MVP. Daily work, sprint planning, careful tracking.*
+- Skills: sprint-planner → daily-standup → [sprint tracking]
+- Gate: gate-evaluator (Stage 6) — Pass: 80+ | Kill: <50
+- Artifacts: BUILD-PROGRESS.md, DELIVERY-LOG.md
 
 ### **Stage 7: Quality**
 *Does it work? Is it usable? Can it survive real users?*
-
-- **Skills**: qa → design-review → ux-walkthrough → performance-audit → plan-security-review (round 2)
-- **Artifacts**: QA-RESULTS.md, PERFORMANCE-REPORT.md, SECURITY-AUDIT.md, UX-FEEDBACK.md
-- **Gate**: Gate Evaluator (Stage 7)
-- **Decision**: Ready to launch, fix and retry, or kill
+- Skills: [QA, design review, UX walkthrough, performance audit]
+- Gate: gate-evaluator (Stage 7) — Pass: 80+
+- Artifacts: QA-REPORT.md, UX-WALKTHROUGH.md, PERFORMANCE-AUDIT.md
 
 ### **Stage 8: Launch**
 *Ship it. Make it real.*
-
-- **Skills**: launch-checklist → launch-content → ship → document-release
-- **Artifacts**: LAUNCH-CHECKLIST.md, LAUNCH-CONTENT.md, RELEASE-NOTES.md, GO-LIVE-PLAN.md
-- **Gate**: Gate Evaluator (Stage 8)
-- **Decision**: Go live, delay and fix, or pivot
+- Skills: launch-checklist → launch-content
+- Gate: gate-evaluator (Stage 8) — Pass: 70+
+- Artifacts: LAUNCH-CHECKLIST.md, LAUNCH-CONTENT.md
 
 ### **Stage 9: Measure**
-*What did we learn? Who's using it? What's the retention, growth, and actual demand?*
-
-- **Skills**: metrics-review → retro → customer-feedback → plan-support-review
-- **Artifacts**: METRICS-DASHBOARD.md, RETENTION-ANALYSIS.md, CUSTOMER-INTERVIEWS-2.md, LEARNINGS.md
-- **Gate**: Gate Evaluator (Stage 9)
-- **Decision**: Scale, pivot, or sunset
+*What did we learn? Retention? Growth? Actual demand?*
+- Skills: metrics-review → customer-feedback
+- Gate: gate-evaluator (Stage 9) — Pass: 60+ | Pivot: 35-44 | Kill: <35
+- Artifacts: METRICS-DASHBOARD.md, RETENTION-ANALYSIS.md
 
 ### **Stage 10: Scale**
-*You've proven the model. Now grow it.*
+*You've proven it. Now grow it.*
+- Skills: growth-playbook → fundraise-prep → hiring-plan
+- Gate: Continuous evaluation
+- Artifacts: GROWTH-STRATEGY.md, FUNDRAISE-DECK.md
 
-- **Skills**: growth-playbook → fundraise-prep → hiring-plan → plan-ceo-review (EXPANSION mode) → plan-cfo-review (round 2)
-- **Artifacts**: GROWTH-STRATEGY.md, FUNDRAISE-DECK.md, HIRING-PLAN.md, FINANCIAL-FORECAST.md
-- **Gate**: Continuous evaluation cycle
-- **Decision**: Fundraise, bootstrap, or maintain
+---
 
-## How the Orchestrator Works
-
-### 1. **Pipeline State Tracking**
-
-I maintain a `PIPELINE-STATE.md` file that tracks:
-
-```
-Current Stage: X
-Founder Profile: complete/incomplete
-Artifacts: (which exist, which are missing)
-Gate History: (all scores, pass/fail, retries)
-Active Warnings: (kill/pivot notices)
-Overall Health: (green/yellow/red)
-```
-
-When you ask for status, I read this file and give you the full picture.
-
-### 2. **Routing Logic**
-
-The routing follows a clear decision tree:
-
-**FIRST TIME?**
-- No FOUNDER-PROFILE.md → Send to **founder-onboarding**
-- Profile incomplete → Send to **founder-onboarding**
-- Profile complete → Move to **Stage 1: idea-intake**
-
-**RETURNING?**
-- Read PIPELINE-STATE.md
-- Show current stage and next steps
-- Route to the appropriate skill based on where you are
-
-### 3. **Founder Profile Integration**
+## Founder Profile Integration
 
 Your profile (FOUNDER-PROFILE.md) shapes how I challenge you:
 
@@ -188,9 +225,11 @@ Your profile (FOUNDER-PROFILE.md) shapes how I challenge you:
 - **No technical or business experience?** I'll be more structured and deliberate
 - **Serial entrepreneur?** I'll expect faster thinking and push for bold moves
 
-I reference your profile at every stage to flag blind spots and adjust challenge level.
+I reference your profile at every gate to flag blind spots and adjust challenge level.
 
-### 4. **The Tone of This Bootcamp**
+---
+
+## The Tone of This Bootcamp
 
 I'm here to be a coach, not a cheerleader:
 
@@ -202,33 +241,27 @@ I'm here to be a coach, not a cheerleader:
 
 I will be direct. I will push. I will also recognize good work. And I will be honest about when an idea should die.
 
-## Starting Your Journey
+---
 
-Here's what happens next:
+## Escape Hatches
 
-1. **If you're brand new:** I'll send you to founder-onboarding to set up your profile.
-2. **If you have a profile:** I'll show you your current stage and route you to the next skill.
-3. **At every stage:** You'll work through skills, build artifacts, and hit a gate.
-4. **At every gate:** I'll evaluate your progress honestly. Pass = move forward. Fail = iterate or kill.
+**If you say "just do it" or show impatience:**
+- I'll fast-track to the relevant gate evaluation
+- Confirm you have minimum artifacts ready
+- Run the gate and give you the verdict
 
-## Commands You Can Use
-
-- **"start the bootcamp"** — Begin from the beginning
-- **"status"** — See where you are right now
-- **"next"** — Move to the next skill in your stage
-- **"evaluate" / "gate check"** — Run the gate for your current stage
-- **"go back"** — Return to the previous stage (with reflection)
-- **"restart stage"** — Restart your current stage from step one
-- **"kill check"** — Assess whether to continue, pivot, or shut down
-- **"show me the map"** — Display the full pipeline map
-- **"help"** — Show all available commands
-
-## A Final Word
-
-You've chosen to be a founder. That means you've chosen to be challenged. This bootcamp will test your idea, your thinking, your resilience, and your judgment. Some ideas will die here. That's the point. The ones that survive will be stronger for it.
-
-Let's begin.
+**If you provide info in one answer to cover multiple questions:**
+- I'll smart-skip ahead
+- Move directly to the next blocker
 
 ---
 
-*Ready? Tell me "start the bootcamp" and we'll get started.*
+## Completion Status
+
+This orchestrator skill ends with a clear route to your next action. You then proceed to that skill, complete its work, return here for status/routing as needed.
+
+**Status markers you'll see:**
+- ✅ READY_FOR_NEXT_STAGE — Gate passed, move forward
+- ⚠️ REWORK_NEEDED — Gate failed, re-run specific skills
+- ❌ BLOCKED — Hard blocker needs external help
+- 🔄 RETURN_WHEN_READY — You've got homework, come back when done

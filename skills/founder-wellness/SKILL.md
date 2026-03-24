@@ -1,7 +1,6 @@
 ---
 name: founder-wellness
-description: >
-  The sustainability check nobody wants but everyone needs. Assesses founder burnout risk, support systems, exit criteria, work-life integration, and mental health awareness. Warm but direct — this is personal.
+description: The sustainability check nobody wants but everyone needs. Assesses founder burnout risk, support systems, exit criteria, work-life integration, and mental health awareness. Warm but direct. Phase-based guided interaction.
 trigger_phrases:
   - "wellness check"
   - "am I sustainable"
@@ -9,399 +8,419 @@ trigger_phrases:
   - "founder health"
   - "can I keep doing this"
   - "stage 5 wellness"
-version: 1.0
+benefits-from:
+  - founder-profile
+  - runway-calculator
+feeds-into: []
+version: 2.0
 ---
 
-# Founder Wellness & Sustainability
+# Founder Wellness & Sustainability (Guided Interactive)
 
 This is the skill nobody wants to use but everyone needs.
 
-I'm not going to pretend that building a company is easy. I'm not going to tell you that you can balance work and life — most founders can't, especially in year one. But I am going to ask you to be honest about what you're signing up for.
+I'm not going to pretend building a company is easy. I'm not going to tell you that you can balance work and life. But I am going to ask you to be honest about what you're signing up for.
 
-Because here's what happens: Month 8 hits. Everything feels impossible. You haven't slept well in three weeks. You're snapping at people you love. You're questioning whether any of this is worth it. And you're spiraling because you never agreed to what you're actually experiencing.
+Month 8 hits. Everything feels impossible. You haven't slept well in three weeks. You're snapping at people you love. You're questioning whether any of this is worth it. And you're spiraling because you never agreed to what you're actually experiencing.
 
 This skill is a contract with your future self. It says: "I thought about this. I know what I'm willing to sacrifice. And if it gets hard, I have a plan to recalibrate rather than break."
 
+## Phase Overview
+
+This skill works in phases:
+- **Phase 0:** Context assessment (solo vs. co-founder, current state)
+- **Phase 1:** Support system mapping (who's in your corner)
+- **Phase 2:** Exit criteria definition (when you'd stop)
+- **Phase 3:** Sacrifice boundaries (what you'll give up)
+- **Phase 4:** Sustainability timeline (can you sustain 2-5 years?)
+- **Phase 5:** Mental health awareness (red flags and resources)
+- **Phase 6:** Work-life integration plan (daily/weekly/monthly boundaries)
+- **Phase 7:** Output & lock (FOUNDER-WELLNESS.md)
+- **Phase 8:** Completion
+
+Each phase uses AskUserQuestion guided interactions. This is personal. Be honest.
+
 ---
 
-## The Uncomfortable Truth About Founder Mental Health
+## Truth: Founder Mental Health Challenges Are Real
 
 **72% of founders report depression, anxiety, or both.**
 
-This isn't weakness. It's not a character flaw. It's the statistical reality of what you're doing: making high-stakes decisions on incomplete information, betting years of your life on an uncertain outcome, and doing it in isolation more often than not.
+This isn't weakness. It's not a character flaw. It's the statistical reality of what you're doing: high-stakes decisions on incomplete information, betting years of life on uncertain outcome, often in isolation.
 
-The difference between founders who survive the hard months and founders who don't isn't that one group is tougher. It's that one group planned for the mental health challenges *before* they hit. They built a support system. They identified their limits. They knew when to ask for help.
+The difference between founders who survive hard months and founders who break isn't toughness. It's planning. They built support systems before crisis. They identified limits. They knew when to ask for help.
 
-This skill exists to help you do that.
-
----
-
-## Section 1: Solo Founder vs. Co-Founder Dynamics
-
-### Are You Building Alone?
-
-Solo founder burnout is real and specific. Here's why:
-
-- **No one to vent to who gets it:** Your friends mean well but can't relate. Your co-founder could understand, but you don't have one.
-- **All decisions are yours:** No one to talk through a hard call with. No one to catch you if your judgment is off.
-- **Isolation is compounding:** Bad month hits, you can't talk to anyone, you spiral, you make worse decisions.
-- **Identity fusion:** Without another founder to balance it, your company *becomes* your identity. If it struggles, you struggle.
-
-### Mitigation Plan for Solo Founders
-
-If you're building alone, you *must* have:
-
-1. **Founder community** (non-negotiable)
-   - Accelerator program (Y Combinator, Techstars, etc.)
-   - Founder networking group (local founder meetups, online communities)
-   - Peer group (other founders at similar stage you check in with weekly)
-   - Why: Someone who gets it. Not a therapist, but someone who's had the same panic attacks.
-
-2. **Advisory board or mentors** (at least 2-3 people)
-   - Someone who's built before and can advise
-   - Someone who cares about you personally, not just your idea
-   - Someone in your market who can reality-check your strategy
-   - Why: External perspective prevents tunnel vision and spiraling.
-
-3. **Life support system** (family, partner, close friends)
-   - People who know this will be hard and want to support you anyway
-   - People you can talk to without hiding how much it sucks
-   - Why: Isolation kills founders. Connection keeps you sane.
-
-**Hard question:** Do you have these already? If not, building them *before* crisis hits is critical.
-
-### Co-Founder Dynamics
-
-If you have co-founders, dynamics are different:
-
-**Pros:**
-- You have someone who gets it (they're in the shit with you)
-- Shared decision-making and problem-solving
-- Built-in accountability and support
-- You're not alone at 2 AM when everything is breaking
-
-**Risks:**
-- Co-founder conflict is WAY worse than solo founder burnout
-- If you disagree on pace or direction, you're stuck
-- If one founder burns out, it cascades
-- Unspoken resentment kills partnerships slowly
-
-**Sustainability check for co-founders:**
-- Do you check in regularly on how you're both feeling (not just on metrics)?
-- Do you have a conflict resolution process before conflict hits?
-- Are both founders on the same page about sacrifice level?
-- Can you take breaks or vacations without the other resenting it?
-
-If any of these is "no," you have a co-founder dynamics problem that will compound over time.
+This skill helps you do that.
 
 ---
 
-## Section 2: Your Support System Map
+## Phase 0: Solo vs. Co-Founder Assessment
+
+**Goal:** Understand your founder structure and unique pressures.
+
+**Re-ground:** "Are you building alone or with co-founders? This determines your wellness risks."
+
+Use AskUserQuestion tool:
+
+**SIMPLIFY:** "Solo: Isolation risk is high. Burnout compounds silently. Co-founder: Different risk (conflict, cascading burnout). Either way, you need to plan."
+
+**RECOMMEND:** "RECOMMENDATION: Identify your specific risks based on structure.
+- Solo: Build community now. Don't wait for crisis.
+- Co-founder: Check in on shared values. Conflict resolution matters.
+- Completeness: 3/10 (haven't thought about this)
+- Completeness: 6/10 (aware of risks, no plan)
+- Completeness: 10/10 (structured support or conflict process in place)"
+
+**OPTIONS:**
+- **(A)** "Solo founder. I need to build community and support system."
+- **(B)** "Co-founders. We need conflict resolution and wellness check-ins."
+- **(C)** "Co-founders but worried about dynamics. We should talk about it."
+
+**For solo founders, challenge:**
+- Do you have a founder peer group (other builders you check in with)?
+- Do you have mentors/advisors (2-3 people)?
+- Do you have life support (family, partner, close friends)?
+
+**For co-founders, challenge:**
+- Do you check in on how each other are feeling (beyond metrics)?
+- Do you have a conflict resolution process defined?
+- Are you aligned on sacrifice level and timeline?
+- Can you take breaks without resentment?
+
+**Exit criteria for Phase 0:** You understand your founder structure and its specific risks. Move to Phase 1 (Support System).
+
+---
+
+## Phase 1: Support System Mapping
+
+**Goal:** Identify who's in your corner. Be specific.
 
 Burnout happens in isolation. Resilience happens in community.
 
-Map out who is in your corner:
+**Re-ground:** "You need a support system. Not one person. A network: other founders, mentors, family, therapist."
 
-### People (Build This Now)
+Use AskUserQuestion tool:
 
-**Inner circle (people who understand startup life):**
+**SIMPLIFY:** "Inner circle: people who get startup life. Extended circle: people who care, even if they don't get it. Professional: therapist when needed. List names, not types. Specific people matter."
+
+**RECOMMEND:** "RECOMMENDATION: Build before crisis. When month 8 hits, you'll want these relationships already in place.
+- Completeness: 1/10 (no support system)
+- Completeness: 6/10 (some people, not systematic)
+- Completeness: 10/10 (specific people mapped, contact cadence set)"
+
+**Map these people (by name, not type):**
+
+**Inner circle (understand startup life):**
 - [ ] Co-founder (if applicable)
-- [ ] Mentor/advisor (someone who's built before)
-- [ ] Peer founder (someone at similar stage, reference calls are OK)
-- [ ] Partner/family member who *gets it* (you can be fully honest)
+- [ ] Mentor/advisor who's built before
+- [ ] Peer founder at similar stage
+- [ ] Partner/family who gets it
 
-**Extended circle (people who care, even if they don't fully get it):**
+**Extended circle (care, even if they don't fully get it):**
 - [ ] Family member who supports you
-- [ ] Close friend who'll tell you the truth
-- [ ] Community (startup group, church, hobby group, something)
+- [ ] Close friend (tells you truth)
+- [ ] Community (startup group, hobby, spiritual, something)
 
-**Professional support (if/when needed):**
-- [ ] Therapist who understands startup culture
+**Professional (if/when needed):**
+- [ ] Therapist who understands founder culture
 - [ ] Business coach or fractional COO
-- [ ] Founder support hotline (yes, these exist — look up Founder Collective's Emotional Startup or similar)
+- [ ] Founder support resources
 
-**Why this matters:** If someone is supporting you, they need to know. Not every support person needs to know every problem. But you shouldn't be carrying all of it alone.
+**Check-in cadence:**
+- Weekly: Peer founder (how are YOU?)
+- Monthly: Mentor (deeper conversation)
+- As needed: Partner/close friend
+- Quarterly or when struggling: Therapist
 
-### The Check-In Cadence
-
-Set specific times to reach out:
-
-- **Weekly:** Peer founder or mentor check-in (just "how are you?" not just "how's the company?")
-- **Monthly:** Mentor/advisor deeper conversation
-- **As needed:** Partner or close friend
-- **If crisis:** Therapist or professional support
-
-Don't wait for burnout to use your support system. Use it preventatively.
+**Exit criteria for Phase 1:** You've mapped specific people and set check-in cadence. Move to Phase 2 (Exit Criteria).
 
 ---
 
-## Section 3: Exit Criteria (The Most Important Part)
+## Phase 2: Exit Criteria Definition
 
-Here's the question nobody asks until it's too late: **When would you stop?**
+**Goal:** Define conditions under which you'd stop or pivot.
 
-Most founders can't answer this. Or they answer "never," which is the most dangerous answer. That's not resilience — that's lack of strategy.
+**Re-ground:** "When would you actually quit? Be specific. This isn't pessimism. It's permission to stop on your terms instead of in crisis."
 
-### Why Exit Criteria Matter
+Use AskUserQuestion tool:
 
-Exit criteria are:
-- **Permission to stop without failure** — You can shut down on your terms, not in crisis
-- **A realistic decision-making framework** — Prevents sunk-cost fallacy (throwing good money after bad)
-- **Mental health protection** — You know when to pivot vs. persevere instead of hoping forever
+**SIMPLIFY:** "Define clear conditions: no revenue by month 12? Mental health damaged? Co-founder conflict? Life event? Write them down. When any condition is met, you decide: pivot, pause, or shut down. This prevents sunk-cost fallacy."
 
-### Define Your Exit Criteria
+**RECOMMEND:** "RECOMMENDATION: Specific exit criteria are mental health protection.
+- Completeness: 1/10 (never thought about it, or 'never quit')
+- Completeness: 6/10 (some criteria, not written)
+- Completeness: 10/10 (specific, written, shared with support system)"
 
-Be specific. Not "if it's not working" but *how do you know it's not working?*
+**Define your exit criteria. Be specific:**
 
-**Example criteria (pick what matters to you):**
+**Revenue traction:**
+- No revenue by month X?
+- Less than $X MRR by month Y?
 
-| Criterion | Threshold | Why |
-|-----------|-----------|-----|
-| Revenue traction | No revenue by month 12 / OR traction < $500 MRR by month 18 | You need some signal that people care |
-| Customer feedback | Cannot find 10 customers willing to pay anything (even $10/mo) | If nobody wants it, you're building for a phantom market |
-| Personal runway | Runway drops below 2 months with no revenue | You need a safety net |
-| Founder health | You're experiencing clinical depression / Or it's damaged your key relationships irreparably | Mental health is more important than the company |
-| Co-founder conflict | Irreconcilable disagreement on product direction / OR loss of trust | Broken partnership is worse than solo failure |
-| Opportunity cost | A better opportunity (job, other project) has emerged that you can't pass up | This is OK. Not every company should exist. |
-| Market signal | Market validation contradicts your theory in a way that can't be fixed | Sometimes you're wrong. That's data, not failure. |
-| Personal circumstances | Major life change (family crisis, health issue, relocation) that makes this impossible | Life happens. That's not quitting. That's being human. |
+**Customer validation:**
+- Can't find 10 customers willing to pay?
 
-**Critical:** Your exit criteria should include both "shutdown" and "pivot." Pivot is not failure.
+**Personal runway:**
+- Runway drops below X months with no revenue?
 
-### The Conversation with Yourself
+**Founder health:**
+- Clinical depression or anxiety unmanageable?
+- Key relationships damaged irreparably?
 
-Answer these directly, in writing:
+**Co-founder conflict:**
+- Irreconcilable disagreement on direction?
+- Loss of trust?
 
-1. **If you shut down in 12 months, what would need to be true?** (Not "I failed" but the actual conditions)
-2. **If you shut down in 18 months, what would need to be true?**
-3. **At what point would you choose mental health over the company?**
-4. **If a co-founder wanted to quit, how would you handle it?**
-5. **If you had to move or face a major life event, would you pause the company or shut it down?**
+**Opportunity cost:**
+- Better opportunity emerged you can't pass up?
 
-Write these down. Not as depressing contingencies, but as clear decision frameworks. You're not being pessimistic — you're being strategic.
+**Market signal:**
+- Market validation contradicts your theory?
+
+**Personal circumstances:**
+- Family crisis, health issue, relocation?
+
+**Write these down.** Not as contingencies but as decision frameworks. Include pivot + shutdown + pause options.
+
+**Exit criteria for Phase 2:** You've written down specific conditions and what action they trigger. Move to Phase 3 (Sacrifice Boundaries).
 
 ---
 
-## Section 4: What's Being Sacrificed?
+## Phase 3: Sacrifice Boundaries
 
-Startups require sacrifice. This skill asks: *What are you OK with sacrificing, and what's non-negotiable?*
+**Goal:** Identify what you're willing to sacrifice and what's non-negotiable.
 
-### The Sacrifice Categories
+**Re-ground:** "What are you willing to give up? Savings? Time with friends? Sleep? Be honest about limits. 'Everything' isn't sustainable."
+
+Use AskUserQuestion tool:
+
+**SIMPLIFY:** "For each category (financial, relational, health, opportunity), ask: How much am I OK sacrificing, and for how long? 'I'll work 70 hrs/week for 12 months' is sustainable. 'I'll work 70 hrs/week indefinitely' is delusion."
+
+**RECOMMEND:** "RECOMMENDATION: Specific boundaries prevent burnout.
+- Completeness: 2/10 ('I'll sacrifice everything')
+- Completeness: 6/10 (some boundaries, not all categories)
+- Completeness: 10/10 (all categories mapped with time limits)"
+
+**For each category, ask:**
 
 **Financial:**
-- Savings being depleted
-- Income being unpaid or below-market
-- Investment/opportunity cost (foregoing other ventures)
-- Benefits/retirement savings
+- How much savings willing to deplete?
+- Comfortable earning below-market for how long?
 
 **Relational:**
-- Time with partner/family
-- Friend relationships
-- Community involvement
-- Dating/new relationships
+- How much time away from partner/family?
+- How much friend connection is non-negotiable?
 
 **Health:**
-- Sleep (chronic sleep deprivation is real)
-- Exercise/fitness
-- Diet quality
-- Mental health care
-- Physical health (ignoring symptoms, skipping checkups)
+- How much sleep is minimum? (Usually 6+ hours)
+- How much exercise is non-negotiable?
+- Diet quality or just survival mode?
 
 **Opportunity:**
-- Other career paths
-- Other projects/interests
-- Travel or experiences
-- Parallel income streams
+- How long willing to defer other projects?
+- Parallel income streams or all-in?
 
 **Personal:**
-- Identity beyond the company
-- Hobbies and interests
-- Personal projects
-- Spiritual practice (if relevant)
+- How much identity beyond company is needed?
+- How much spiritual/hobby time is needed?
 
-### The Key Question
+**The real answers sound like:**
+- "I'll deplete $50k but not my last $10k"
+- "I'll work 70 hrs/week for 12 months, then we recalibrate"
+- "I can sacrifice dating, but not core friendships"
+- "I'll skip the gym but not sleep"
 
-For each category, ask: **What level of sacrifice am I OK with, and for how long?**
-
-**Example:**
-- "I'm willing to deplete $50k in savings, but not more"
-- "I'm willing to work 70-hour weeks for 12 months, but not 24 months"
-- "I'm willing to sacrifice dating/relationships temporarily, but not my core friendships"
-- "I'm OK with skipping the gym, but not sleep"
-
-**The trap:** Saying "I'm willing to sacrifice everything" sounds like commitment. It actually sounds like delusion. You can't sustain that. So you burn out, and then you resent the company.
-
-**The real answer:** "I'm willing to sacrifice X for Y months. After that, we recalibrate."
+**Exit criteria for Phase 3:** You've mapped sacrifice boundaries with time limits. Move to Phase 4 (Sustainability Timeline).
 
 ---
 
-## Section 5: Sustainability: Can You Keep This Pace?
+## Phase 4: Sustainability Timeline
 
-Most startups take 2-5 years to reach meaningful traction. This is the math that most founders don't do.
+**Goal:** Assess whether you can sustain the pace for 2-5 years (typical startup timeline).
 
-### The Timeline Reality
+**Re-ground:** "Most startups take 2-5 years to meaningful traction. Can you sustain this pace that long?"
 
-- **Months 0-6:** Proof of concept, MVP
-- **Months 6-12:** Early traction, product-market fit search
-- **Months 12-24:** Growth phase (if you've found fit)
-- **Months 24+:** Scaling or next decision (pivot, fundraise, or shut down)
+Use AskUserQuestion tool:
 
-If you're planning to go all-in, you're committing to at least 2 years. Probably 3.
+**SIMPLIFY:** "Months 0-6: MVP. 6-12: Traction search. 12-24: Growth (if PMF). 24+: Scale or next decision. You're committing to 2-3+ years minimum. Can you?"
 
-### Can You Sustain This?
+**RECOMMEND:** "RECOMMENDATION: Be realistic about timeline. 'Counting months' suggests you won't make it.
+- Completeness: 2/10 (no timeline thinking)
+- Completeness: 6/10 (timeline known, not sure about sustainability)
+- Completeness: 10/10 (realistic 2-3 year horizon, pacing strategy)"
 
-Ask yourself:
+**Challenge:**
+- Can you financially sustain 2+ years? (savings + funding needed)
+- Can key relationships survive? (Have you talked to partner about timeline?)
+- Have you ever focused intensely on something for 2+ years?
+- What's your sustainable weekly hours? (60? 50? 40?)
 
-1. **Financially:** Can you survive financially (or on funding) for 2-3 years? If not, keep your job or secure funding now.
-2. **Relationally:** Can your key relationships survive 2-3 years of reduced attention? Have you talked to your partner about this timeline?
-3. **Mentally:** Have you ever sustained intense focus on one thing for 2+ years? Do you know how to prevent burnout over that timeline?
-4. **Energetically:** At your peak energy, what's your sustainable weekly hours? 60? 50? Can you do that for 24+ months?
-
-**The honest assessment:**
-- If you're counting months, you won't make it 2 years. Burn out is predictable.
-- If you're thinking in 18-month chapters, you have better sustainability.
-- If you're thinking year by year with recalibration points, you might actually make it.
-
-### Pacing Strategy
-
-Instead of "maximum effort until success," try:
-
-**Sustainable high-effort approach:**
-- 12 weeks of intense focus (MVP, first customer, first metric)
+**Pacing strategy (recommended):**
+- 12 weeks intense focus (MVP, first customer, first metric)
 - 1 week break/recalibration
-- Next 12 weeks of focused effort
-- Ongoing: Protect sleep, exercise, some social time
+- Repeat
+- Protect: sleep, exercise, social time
 
-Why this works: You get intensity without burnout. Your brain doesn't break. You can sustain it for years.
-
----
-
-## Section 6: Mental Health Awareness
-
-This is direct: **Founder depression and anxiety are extremely common. Having a plan isn't weakness — it's strategy.**
-
-### Red Flags (Watch for These in Yourself)
-
-- Persistent sleep problems (can't sleep, or sleeping 12+ hours and still tired)
-- Loss of interest in things you used to enjoy
-- Constant fatigue or lack of motivation
-- Irritability or mood swings
-- Difficulty concentrating despite trying hard
-- Withdrawal from friends and family
-- Persistent negative self-talk ("I'm failing," "I'm not good enough," "this will never work")
-- Obsessive thinking about the company (can't turn it off)
-
-### What to Do If You Notice These
-
-**Short term:**
-- Talk to someone (your partner, mentor, friend — not just your co-founder)
-- Get a sleep doctor's visit if sleep is bad (sometimes it's medical, not just stress)
-- Consider talking to a therapist (not weakness, it's maintenance)
-
-**Medium term:**
-- Recalibrate pace if possible
-- Reduce isolation (increase founder community, support system)
-- Check your exit criteria — maybe you're past the point where this makes sense
-
-**If it's severe:**
-- Seek professional mental health support
-- Tell your co-founder or advisors (they can help)
-- Know that shutting down is preferable to a breakdown
-
-**Before it hits:** Have a therapist or counselor identified now. Don't wait for crisis.
-
-### Resources
-
-- **Founder-specific support:** Founder Collective's Emotional Startup, Lighthouse (founder coaching), Wise (founder mental health app)
-- **General mental health:** BetterHelp, Talkspace (affordable therapy)
-- **If you're in crisis:** Crisis hotline (988 in US), your doctor, an ER if it's severe
+**Exit criteria for Phase 4:** You've assessed 2-3 year sustainability or identified that you can't. Move to Phase 5 (Mental Health Awareness).
 
 ---
 
-## Section 7: Work-Life Integration Plan (Not Balance)
+## Phase 5: Mental Health Awareness & Resources
 
-You won't have balance. That's not realistic for founders. But you *can* have integration.
+**Goal:** Identify mental health risks and build support.
 
-Integration means:
-- You have clear boundaries on when you're working vs. not
-- You're present when you're not working (not mentally checking Slack)
-- You have *some* recovery time each week
-- You're not always in reactive/crisis mode
+**Re-ground:** "72% of founders report depression/anxiety. This is normal, not weakness. Have a plan."
 
-### Create Your Integration Plan
+Use AskUserQuestion tool:
+
+**SIMPLIFY:** "Red flags: sleep problems, loss of interest, fatigue, irritability, withdrawal, negative self-talk, obsessive thinking. If you notice these, talk to someone immediately. Therapist identified before crisis."
+
+**RECOMMEND:** "RECOMMENDATION: Therapist identified and vetted before you need them.
+- Completeness: 1/10 (no mental health plan)
+- Completeness: 6/10 (aware of risks, no professional identified)
+- Completeness: 10/10 (therapist selected, crisis resources documented)"
+
+**Red flags to watch for:**
+- Persistent sleep problems (can't sleep or sleeping 12+ hrs)
+- Loss of interest in things you loved
+- Chronic fatigue
+- Irritability/mood swings
+- Can't concentrate
+- Withdrawal from people
+- Negative self-talk
+- Obsessive company thinking
+
+**If you notice these:**
+- Short term: Talk to support person
+- Medium term: Schedule with therapist
+- Severe: Seek professional help immediately
+
+**Crisis resources:**
+- 988 (US suicide/crisis line)
+- BetterHelp, Talkspace (therapy)
+- Local ER if severe
+
+**Exit criteria for Phase 5:** You've identified red flags and have therapist contact info. Move to Phase 6 (Work-Life Integration).
+
+---
+
+## Phase 6: Work-Life Integration Plan
+
+**Goal:** Define daily, weekly, monthly, quarterly boundaries.
+
+**Re-ground:** "You won't have balance. But you can have integration: clear boundaries, recovery time, some non-work life."
+
+Use AskUserQuestion tool:
+
+**SIMPLIFY:** "Daily: what time you stop working. Weekly: one disconnected day. Monthly: full day off. Quarterly: longer break. Protect sleep. Set message boundaries."
+
+**RECOMMEND:** "RECOMMENDATION: Specific boundaries prevent drift into constant work.
+- Completeness: 2/10 (no boundaries, always working)
+- Completeness: 6/10 (some boundaries, not consistent)
+- Completeness: 10/10 (daily/weekly/monthly/quarterly boundaries set)"
+
+**Define these boundaries:**
 
 **Daily:**
-- [ ] Shutdown time: What time do you stop working each day? (e.g., 7 PM)
-- [ ] Morning ritual: Something non-work that sets you up (30 min of exercise? coffee with family?)
-- [ ] Sleep target: How much do you need to function? (7-8 hours for most people)
+- Shutdown time (stop work at X)
+- Morning ritual (30 min non-work)
+- Sleep target (hours)
 
 **Weekly:**
-- [ ] Disconnected time: One full day where you're not checking work (Sundays? Saturday morning?)
-- [ ] One thing outside work: Gym, time with partner, hobby, friend hangout — one thing that's just for you
-- [ ] Recalibration check-in: 30 min where you reflect on how sustainable this week was
+- Disconnected day (when?)
+- One thing for you (gym/friend/hobby?)
+- Recalibration check-in (30 min reflection)
 
 **Monthly:**
-- [ ] Day off: One full day where you completely disconnect
-- [ ] Check-in with support system: Mentor, co-founder, therapist, someone
-- [ ] Recalibrate pace if needed
+- Full day off (when?)
+- Support system check-in (mentor/therapist/friend?)
 
 **Quarterly:**
-- [ ] Longer break: A few days where you're actually gone and not working
-- [ ] Assess sustainability: Is this pace sustainable? If not, what changes?
+- Longer break (few days off?)
+- Sustainability reassessment (pace still OK?)
 
-### The Critical Boundary
+**Critical boundary:**
+- Messages: Check at set times (e.g., 9 AM, 3 PM)
+- Slack is not emergency line (real emergencies are rare)
+- Set expectations with team
 
-**You cannot respond to every message immediately.** This is the #1 thing that kills founder sustainability.
-
-- Your Slack is not an emergency line
-- Your email is not an emergency line
-- Emergencies are rare (someone is hurt, critical system is down, major legal issue)
-- Everything else can wait until your next work block
-
-Set expectations: "I check messages at 9 AM and 3 PM. Real emergencies, call me."
+**Exit criteria for Phase 6:** You've defined boundaries and communicated them. Move to Phase 7 (Output).
 
 ---
 
-## Section 8: The Output: FOUNDER-WELLNESS.md
+## Phase 7: Output & Lock FOUNDER-WELLNESS.md
 
-Once we go through this assessment, I'll create a **FOUNDER-WELLNESS.md** file for you with:
+**Goal:** Generate comprehensive wellness plan.
 
-1. **Sustainability assessment** (can you sustain this for 2-5 years?)
-2. **Your support system map** (who's in your corner, what's missing)
-3. **Exit criteria** (specific, written definitions of when you'd stop)
-4. **Sacrifice boundaries** (what you're willing to give up, what's non-negotiable)
-5. **Work-life integration plan** (actual daily/weekly/monthly boundaries)
-6. **Mental health resource list** (therapist found, crisis plan identified)
+I will produce **FOUNDER-WELLNESS.md** containing:
 
-This document is personal. It's not shared with your investors or your co-founder unless you want to share it. It's for you, to reference when month 8 hits and everything feels impossible.
+```markdown
+# Founder Wellness & Sustainability Plan
+
+## Founder Structure
+Solo / Co-founders
+
+## Support System Map
+[Names, contact cadence, check-in schedule]
+
+## Exit Criteria
+[Specific conditions that trigger decisions]
+
+## Sacrifice Boundaries
+[Financial / Relational / Health / Opportunity / Personal with time limits]
+
+## Sustainability Assessment
+[Can sustain 2-3 years? Yes/No/With modifications]
+
+## Mental Health Plan
+[Red flags, therapist, crisis resources]
+
+## Work-Life Integration Boundaries
+[Daily / Weekly / Monthly / Quarterly commitments]
+
+## Critical Reminders
+[Personalized one-liners for month 8]
+```
+
+This is personal. For your eyes. Reference when month 8 hits and everything feels impossible.
 
 ---
 
-## How This Skill Works
+## Escape Hatches
 
-I'm going to ask you things that are personal. About your mental health. About your relationships. About what you're really willing to sacrifice. About whether you actually believe in this thing you're building.
+**If founder says "just do it" or expresses impatience:**
+- Fast-track to artifact generation phase
+- Use best available information to fill gaps
+- Note any assumptions made
 
-There are no right answers. There are only *honest* answers. And honest answers let you build a plan that actually works instead of a hope that eventually breaks you.
-
-**Some of the questions I'll ask:**
-- Are you building alone or with co-founders?
-- Who in your life understands what you're doing?
-- When would you actually quit?
-- What are you willing to sacrifice?
-- What's non-negotiable?
-- Have you ever experienced depression or anxiety? Do you have support if you do?
-- How many hours per week can you *sustainably* work?
-- What does success look like that *doesn't* require breaking yourself?
-
-Be honest. Not with me — with yourself. That's what matters.
+**If founder's answers cover multiple questions:**
+- Smart-skip already-answered phases
+- Acknowledge what was covered and move forward
 
 ---
 
-## One More Thing
+## Phase 8: Completion & Handoff
 
-If you're reading this and thinking "I don't have time for wellness, I need to focus on the business" — I get it. That's how most founders think. And it's exactly backwards.
+**Completion status:** Once FOUNDER-WELLNESS.md is saved, skill is complete.
 
-The business is dependent on you. If you break, the business breaks. Your wellness *is* business strategy.
+**Recalibration:** Revisit quarterly. Adjust boundaries if needed.
 
-This isn't a luxury. It's maintenance.
+---
 
-**Ready?**
+## Completion Status
+
+**DONE** — FOUNDER-WELLNESS.md written and saved.
+**DONE_WITH_CONCERNS** — Plan exists but some gaps flagged for later review.
+**BLOCKED** — Founder didn't want to do this (that's OK, but reconsider).
+**NEEDS_CONTEXT** — Need additional information before completing.
+
+**Next Step:** Proceed to next skill in pipeline.
+Return to z-combinator orchestrator for routing.
+
+---
+
+## Key Principle
+
+**The business is dependent on you. If you break, the business breaks. Your wellness IS business strategy.**
+
+This isn't luxury. It's maintenance. Do it before month 8 hits.

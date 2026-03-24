@@ -7,220 +7,247 @@ trigger_phrases:
   - evidence review
   - did I validate
   - are my interviews good enough
+benefits-from:
+  - customer-discovery
+feeds-into:
+  - gate-evaluator
 ---
 
 # Evidence Review: Adversarial Analysis of Your Customer Interviews
 
-## Your Mission
+## Mission
 
-You've done interviews. Now I'm going to rip apart your evidence and tell you exactly what you've learned — and what you haven't.
-
-This is not a pep talk. This is a reality check.
+You've completed interviews. Now I'm going to analyze your evidence and tell you exactly what you've learned — and what you haven't. This is not a pep talk. This is a reality check.
 
 ---
 
-## What I'm Looking For
+## Phase 0: Prerequisites & Intake
 
-I will analyze your EVIDENCE-LOG.md and score it on five dimensions:
+Use AskUserQuestion:
 
-### 1. Confirmation Bias Check
+**Re-ground:** Stage 2, Phase 2. You've completed customer interviews and filled in EVIDENCE-LOG.md. Now I'm going to rip apart your evidence and score it on five dimensions.
 
-**Question:** Did you only interview people who were already inclined to agree with you?
+**Simplify:** I'll analyze your interviews for confirmation bias, leading questions, signal vs. noise, willingness to pay, and pattern recognition. I'll give you an Evidence Quality Score (0-100). If you scored 80+, you have real evidence and proceed to Stage 3. If you scored below 60, you need to do more interviews.
 
-**Red flags:**
-- All 5 interviews were with friends or colleagues
-- All interviews came from your personal network
-- You didn't have to convince anyone to talk to you (they all said yes immediately)
-- Everyone mentioned the same problem without you prompting it
-- Everyone seemed enthusiastic about your idea
+**Recommend:** RECOMMENDATION: Have EVIDENCE-LOG.md ready with all interview notes. This is only as good as the quality of data you provide. Completeness: 10/10 if you have 5-10 interviews fully documented.
 
-**What I'll look for:**
+**Options:**
+- A) "I have EVIDENCE-LOG.md ready with all interviews"
+- B) "I'm still completing some interviews"
+- C) "I did interviews but didn't document them"
+
+**If not ready:** Tell them to complete customer-discovery first.
+
+**If ready:** Proceed to Phase 1.
+
+---
+
+## Phase 1: Evidence Audit & Bias Check
+
+I will analyze your EVIDENCE-LOG.md on five dimensions:
+
+### 1.1 Confirmation Bias Check
 - How many strangers vs. friends/coworkers?
 - How did you find each person?
 - Did anyone push back or disagree?
 - Did anyone say "I don't think that's actually a problem"?
+- **Red flags:** All 5 from your network, everyone said yes immediately, nobody disagreed
 
-**Brutal truth:** If 6 of your 8 interviews were friends, you have zero evidence. Friends are polite. They don't represent your market.
-
----
-
-### 2. Leading Questions Test
-
-**Question:** Did you pitch or listen? Did you ask leading questions?
-
-**Red flags:**
-- You talked for more than 30% of the interview
-- You explained your solution before asking about the problem
-- Your notes say "They agreed that [problem] is important" instead of "They said [specific example of problem]"
-- You asked "Would you want [solution]?" instead of "What did you try?"
-- You led them toward an answer
-
-**What I'll check:**
-- Do your notes show specific examples they mentioned, or just your interpretations?
+### 1.2 Leading Questions Test
+- Do notes show specific examples they mentioned, or your interpretations?
 - Did you ask follow-ups when they gave vague answers?
-- Can I see the exact words they used?
+- Can I see exact words they used?
+- **Red flags:** You talked 30%+, you explained solution before asking about problem, you asked "Would you want [solution]?"
 
-**Brutal truth:** If you pitched, you contaminated the interview. Everything they said after that is suspect.
+### 1.3 Signal vs. Noise Mapping
+For each statement they made, is it:
+- **Signal (real demand):** "I've spent $X/month," "I tried X and it didn't work," "Can you update me?" (and they follow up), "I introduced you to my coworker"
+- **Weak signal:** "That sounds interesting," "I'd definitely use it," "Let me know when you're ready"
+- **No signal:** Just agreement, "Cool idea," vague enthusiasm
 
----
+Map every statement. Count total signal statements across all interviews.
 
-### 3. Signal vs. Noise
+### 1.4 Willingness-to-Pay Signals
+- ✅ Real: Offered money, asked for early access with payment, asked "How much would this cost?", mentioned they're currently paying, asked when launching
+- ⚠️ Weak: "I'd probably pay something," "It depends on price," "How much are you thinking?"
+- ❌ No signal: No mention of money, "I'd want it for free"
 
-**Question:** Did they express real interest or just polite interest?
+Count how many people showed real WTP signals.
 
-**Signal (real demand):**
-- "I've spent $X/month on [existing solution] for [time period]"
-- "I've tried [other tool] and it didn't work because..."
-- "I'd want early access" (unsolicited)
-- "Can you send me updates when you launch?" (and they actually follow up)
-- "I introduced you to my coworker who has the same problem"
-- Changed their behavior based on talking to you
-
-**Noise (polite interest):**
-- "That sounds interesting"
-- "I'd definitely use it"
-- "Let me know when you're ready"
-- "Cool idea"
-- Long pause then a vague response
-
-**What I'll do:** Map every statement they made into Signal or Noise. Count them.
-
-**Brutal truth:** "That sounds interesting" is code for "I'll never use this." One person saying it doesn't matter. Five people saying it means nobody wants this.
+### 1.5 Pattern Recognition
+List every problem mentioned and count frequency:
+- **Strong pattern:** 5+ people mention same problem unprompted, give similar examples, describe similar consequences
+- **Weak pattern:** 2 people mention it, 3 mention different problems, only mentioned after you ask leading question, "would be nice" not "actually struggle"
 
 ---
 
-### 4. Willingness-to-Pay Signals
+## Phase 2: Score Each Dimension
 
-**Question:** Did anyone actually indicate they'd pay? Did anyone ask how much?
+For each of the 5 dimensions, I'll assign a 0-10 score:
 
-**Real signals:**
-- ✅ Offered money upfront
-- ✅ Asked for early access with payment option
-- ✅ Said "How much would this cost?" (they're thinking about it)
-- ✅ Mentioned they're currently paying for a solution
-- ✅ Asked when you're launching (implied: they want to buy)
+**Scoring Guide:**
+- **9-10:** Exceptional. Zero bias signals, clear high-signal evidence across interviews.
+- **7-8:** Solid. Minor bias flags, mostly high-signal evidence.
+- **5-6:** Moderate. Some bias present, mix of signal and weak signal.
+- **3-4:** Weak. Significant bias flags, mostly weak signal or leading questions.
+- **0-2:** Invalid. Heavy bias, no real signal, or very few interviews.
 
-**Weak signals:**
-- ⚠️ "I'd probably pay something"
-- ⚠️ "It depends on the price"
-- ⚠️ "How much are you thinking?"
+Use AskUserQuestion after I score to deliver dimension results:
 
-**No signals:**
-- ❌ No mention of money at all
-- ❌ "I'd want it for free"
-- ❌ "I'd try it if it's free"
+**Re-ground:** I've analyzed your evidence against five dimensions. Here's how you scored.
 
-**What I'll count:** How many people showed willingness-to-pay signals? (Not required for all 5, but at least 1-2 should show it clearly.)
+**Simplify:** [Dimension name]: [Score/10]. [One sentence reason.]
 
----
+**Recommend:** RECOMMENDATION: [If weak dimension, what to fix]. Completeness: 10/10 if you [specific action].
 
-### 5. Pattern Recognition
-
-**Question:** Do the same problems come up across multiple interviews?
-
-**Strong pattern:**
-- 5+ people mention the same problem unprompted
-- They give similar examples
-- They describe similar consequences
-
-**Weak pattern:**
-- 2 people mention it, 3 mention different problems
-- They only mention it after you ask a leading question
-- The problem is "it would be nice if" not "I actually struggle with this"
-
-**What I'll do:** List every problem mentioned and count how many times it appeared. Separate "mentioned once" from "mentioned by 5+ people."
+**Options:**
+- A) "Keep going, show me the overall score"
+- B) "I want to explain this dimension more"
+- C) "I disagree with that score"
 
 ---
 
-## The Scoring Framework
+## Phase 3: Evidence Quality Score & Verdict
 
-I'll assign an Evidence Quality Score from 0-100.
+Composite Evidence Quality Score = Average of 5 dimensions (weighted toward signal quality)
 
-**100 (Legendary):** 8+ strangers, each specifically describe the same pain point, at least 3 offered to pay, zero leading questions, clear pattern of desperation.
+**Scoring Bands:**
 
-**80-99 (Strong):** 6-8 interviews, at least 70% strangers, 3+ mention same problem unprompted, 1-2 willingness-to-pay signals, minimal confirmation bias.
+**80-100 (Strong):** 6-8 interviews, 70%+ strangers, 3+ mention same problem unprompted, 1-2+ willingness-to-pay signals, minimal confirmation bias, mostly high-signal statements.
 
-**60-79 (Moderate):** 5-6 interviews, mix of friends and strangers, 2-3 mention the problem, weak willingness-to-pay signals, some leading questions detected.
+**60-79 (Moderate):** 5-6 interviews, mix of friends/strangers, 2-3 mention problem, weak WTP signals, some leading questions detected, some bias present.
 
-**40-59 (Weak):** 5 interviews but mostly friends, multiple problems mentioned (no pattern), no willingness-to-pay signals, confirmation bias detected, leading questions found.
+**40-59 (Weak):** 5 interviews but mostly friends, multiple different problems mentioned (no pattern), no WTP signals, confirmation bias detected, many leading questions found.
 
-**0-39 (Invalid):** Fewer than 5 interviews, all friends, heavy confirmation bias, lots of leading questions, no clear evidence of demand.
+**0-39 (Invalid):** Fewer than 5 interviews, all friends, heavy confirmation bias, lots of leading questions, zero signal evidence.
 
----
+Use AskUserQuestion to deliver verdict:
 
-## What Happens Next
+**Re-ground:** Based on my analysis of all five dimensions, here's your Evidence Quality Score and what it means.
 
-**Score 80+:** ✅ You have real evidence. Proceed to Lean Canvas. Your customer hypothesis is validated (for now).
+**Simplify:** [Your score is X/100.] [What this means: do you have evidence or not?]
 
-**Score 60-79:** ⚠️ You have *some* evidence but gaps remain. I'll tell you exactly what to fix before you proceed.
+**Recommend:** RECOMMENDATION: [If 80+] Proceed to Stage 3. [If 60-79] Do more interviews in these areas. [If <60] You need to redo interviews with strangers, better questions, less pitching.
 
-**Score 0-59:** ❌ You don't have evidence yet. I'll tell you exactly what went wrong and what to do differently. You do more interviews.
-
----
-
-## The Brutally Honest Output
-
-I won't sugarcoat this. Here's what a weak review looks like:
-
-> **You interviewed 5 people.** 3 were friends. The other 2 said "that sounds interesting" which is code for "I'll never use this."
->
-> **The problem you think you're solving:** Only 1 person mentioned it. The other 4 mentioned different problems or said "I'm not sure I have this problem."
->
-> **Willingness to pay:** Zero. Nobody asked how much it costs. Nobody said they'd buy it.
->
-> **Your leading questions:** Interview 2 starts with you explaining the solution, then asking "Would you want this?" They said yes. That's worthless.
->
-> **Evidence Quality Score:** 15/100. You have zero evidence of demand.
->
-> **What to do:** Run 5 more interviews with STRANGERS in your target market. Do not interview friends or coworkers. Find people who are currently struggling with this problem. Ask them about specific examples. Stop pitching. Listen more.
-
-And here's what a strong review looks like:
-
-> **You interviewed 8 people.** 7 were strangers. 1 was a coworker. Excellent.
->
-> **The problem you think you're solving:** 7 out of 8 mentioned it unprompted. They gave specific examples of how it costs them time/money. Strong pattern.
->
-> **Willingness to pay:** 2 people asked how much you'd charge. 1 offered $500/month. 1 said they're currently paying $2k/month for an inferior solution.
->
-> **Your interviews:** Minimal pitching. You asked follow-ups. Your notes show exact quotes, not your interpretations. Clean.
->
-> **Evidence Quality Score:** 88/100. You have strong evidence that this problem matters to your target customer.
->
-> **What to do:** Proceed to Lean Canvas. Your customer hypothesis is solid. Now scope your MVP and validate with these people.
+**Options:**
+- A) [If 80+] "Move me to Stage 3 / Lean Canvas"
+- B) [If 60-79] "I'll do more interviews first"
+- C) [If <60] "I want to understand what went wrong"
+- D) [Any] "I disagree with your assessment"
 
 ---
 
-## Bias Flags I'll Look For
+## Phase 4: Detailed Feedback by Verdict
 
-| Bias | How It Shows Up | Why It Matters |
-|---|---|---|
-| Confirmation Bias | You only talk to people who already agree | You miss real objections |
-| Selection Bias | You pick interviews that went well, ignore the critical ones | You lose the ground truth |
-| Polite Listener Bias | People agree because they're nice, not because they want to buy | You think you have demand when you don't |
-| Survivorship Bias | You focus on the people who engaged, forget the ones who ghosted | High engagement doesn't mean market demand |
-| Expertise Bias | You're so convinced you're right, you interpret every comment as validation | You miss the "I'm not sure" signals |
+### If Score 80+: STRONG EVIDENCE
+- Acknowledge the strongest dimensions
+- Flag any dimension below 7 (these are weak spots for next stage)
+- Clear them: "You have real evidence that your customer hypothesis is correct. Your interviewees described the problem consistently, showed actual pain (monetary or time-based), and are actively looking for solutions. You're ready for Lean Canvas."
 
----
+### If Score 60-79: MODERATE EVIDENCE WITH GAPS
+- Identify the 2-3 weakest dimensions
+- Specify exact gap: "You have confirmation bias in your sample (too many friends). You need 3-5 more interviews with strangers."
+- Tell them what to fix: "Re-run customer-discovery but focus on: [specific audience/community], [better questions for WTP], etc."
+- Give timeline: "Do 3-5 more interviews in next 7 days, return for re-evaluation."
 
-## Your Evidence is Now Public
-
-Once I review it, I'll update EVIDENCE-LOG.md with:
-- My bias flags and specific examples
-- Signal vs. Noise breakdown
-- Pattern analysis
-- Willingness-to-pay assessment
-- Evidence Quality Score
-
-You'll have a clear picture of what you learned and what you need to do next.
+### If Score 0-59: INVALID EVIDENCE
+- Be direct: "You don't have evidence yet."
+- Explain why: "Your sample is 80% friends. You pitched in half your interviews. You only have one person mentioning your core problem. This isn't your fault — it's a learning moment."
+- Tell them what went wrong: "The anti-patterns you hit: [leading questions, confirmation bias, vague notes]."
+- Prescribe fix: "Do 5-7 more interviews with STRANGERS in [specific community]. Use [specific questions from customer-discovery]. Record or take verbatim notes. Don't pitch. Come back when done."
 
 ---
 
-## No Bluffing Allowed
+## Phase 5: Artifact Update & Bias Flags
 
-You can't proceed with a weak evidence score. You can't say "my friends love it so I'm moving forward." You can't skip this stage.
+Update EVIDENCE-LOG.md with:
+- My bias flags and specific examples (with quotes)
+- Signal vs. Noise breakdown per interview
+- Pattern analysis (which problems came up, how many times)
+- Willingness-to-pay assessment (who showed real WTP)
+- Evidence Quality Score explanation
 
-**Stage 2 is complete only when your Evidence Quality Score is 60+.**
+Example:
 
-Below that, you iterate: more interviews, different customers, better questions.
+```markdown
+# EVIDENCE REVIEW ANALYSIS
 
-Let's see what you've got.
+**Evaluator:** Evidence Review Skill
+**Date:** [today]
+**Interviews Analyzed:** [X]
+**Evidence Quality Score:** [X]/100
+**Verdict:** [STRONG / MODERATE / WEAK / INVALID]
+
+---
+
+## Dimension Scores
+- Confirmation Bias: 7/10
+- Leading Questions: 6/10
+- Signal vs. Noise: 5/10
+- Willingness to Pay: 7/10
+- Pattern Recognition: 8/10
+- **Overall Score:** 66/100
+
+---
+
+## Bias Flags
+[List each bias detected with specific example and quote]
+
+---
+
+## Signal Breakdown
+- High Signal Statements: 12
+- Weak Signal Statements: 8
+- No Signal Statements: 5
+- **Ratio:** 60% high signal, acceptable
+
+---
+
+## Pattern Analysis
+- **Core Problem:** Mentioned by [X] people unprompted
+- **Related Problems:** [List other problems mentioned]
+- **Problem Consistency:** [Strong/Moderate/Weak]
+
+---
+
+## WTP Assessment
+- Real WTP Signals: [X people]
+- Weak WTP Signals: [X people]
+- No WTP Mention: [X people]
+- **Conclusion:** [You have/don't have real WTP signals]
+
+---
+
+## Verdict: [PASS / ITERATE / FAIL]
+
+[2-3 paragraph explanation and next steps]
+```
+
+---
+
+## Phase 6: Completion & Routing
+
+Once analysis is complete, use AskUserQuestion:
+
+**Re-ground:** You now know exactly what your evidence says and what you need to do next.
+
+**Simplify:** [If PASS:] You have evidence. Move to Stage 3. [If ITERATE:] More interviews needed in [area]. [If FAIL:] Start over with [specific fixes].
+
+**Recommend:** RECOMMENDATION: [Specific next action]. Completeness: 10/10 if you do [action] in [timeframe].
+
+**Options:**
+- A) [If PASS] "Move me to Stage 3 / Lean Canvas"
+- B) [If ITERATE] "I'll do more interviews"
+- C) [If FAIL] "I want to understand where I went wrong"
+
+---
+
+## Completion Status
+
+**PASS (Score 80+)** — Proceed to Stage 3. Return to z-combinator orchestrator for routing to lean-canvas skill.
+
+**ITERATE (Score 60-79)** — Do more customer-discovery interviews in weak areas. Return when ready for re-evaluation.
+
+**FAIL (Score <60)** — Redo customer-discovery with better approach. Return when you have new evidence set.
+
+This is the gate before you scope an MVP. Don't skip it or fake it.

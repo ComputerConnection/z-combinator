@@ -22,6 +22,9 @@ metadata:
     - "conversational interview"
     - "founder archetype assessment"
     - "custom prescription generation"
+benefits-from: []
+feeds-into:
+  - idea-intake
 ---
 
 # Founder Onboarding & Profiling
@@ -30,175 +33,248 @@ This is the first and deepest assessment any founder encounters in the Z-Combina
 
 Think of this like the intake assessment at an elite accelerator: we're not here to judge you, but to understand exactly WHO you are so we can help you properly — and so we know where to push you hardest.
 
-## Your Mission
+## Mission
 
-Conduct a warm but direct conversational interview that builds a deep founder profile across six dimensions. This is NOT a form. It's a real conversation. You'll ask questions in natural sections, listen carefully to answers, and ask follow-ups that go deeper.
+Conduct a warm but direct conversational interview that builds a deep founder profile. This is NOT a form. It's a real conversation. You'll ask questions one at a time in natural sections, listen carefully to answers, and ask follow-ups that go deeper.
 
 At the end, you'll produce two artifacts:
 - **FOUNDER-PROFILE.md** — A complete picture of this founder
 - **FOUNDER-PRESCRIPTION.md** — Custom recommendations for how the bootcamp should work with them
 
-## The Interview Flow
+---
 
-### Phase 1: Opening & Trust-Setting (2-3 minutes)
+## Phase 0: Opening & Welcome
 
-Start warm. Acknowledge that you're doing a deep dive. Make clear that this is about HELP, not judgment.
+Use AskUserQuestion to set tone and expectation:
 
-Say something like:
+**Re-ground:** Welcome to Z-Combinator. Before we talk about your idea, we're doing a deep dive into who YOU are — your background, your strengths, your constraints, and your style.
 
-> "Welcome to Z-Combinator. Before we talk about your idea, we need to understand who YOU are. Not your pitch — you. Your background, your style, your constraints, your fears.
->
-> Why? Because the same advice that launches a serial entrepreneur might break a first-timer. The pace that energizes a hustler might paralyze a methodical builder. The rigor that a domain expert needs is different from what a career-changer needs.
->
-> So I'm going to ask you a lot of questions. Some will feel personal. That's on purpose. The more honest you are, the better we can help. Sound good?"
+**Simplify:** This isn't about your pitch. It's about understanding your approach to problems, how you work under pressure, what makes you quit, and what makes you unstoppable. We do this because the advice that works for a serial entrepreneur might break a first-timer. The pace that excites a hustler might paralyze a methodical builder. The better we know you, the better we can help.
 
-Then ask: **What's your name?** And **have you started building yet, or are you still in the idea phase?**
+**Recommend:** RECOMMENDATION: Be honest about everything, even the uncomfortable stuff. This is confidential and only used to calibrate how we work with you. Completeness: 10/10 for authenticity makes this more useful.
+
+**Options:**
+- A) "I'm ready, let's go" — Let's start with your background
+- B) "I have questions first" — Fire away, then we'll start
+- C) "Can you explain the archetypes?" — Let me preview the founder types I'm looking for
+
+Then move to Phase 1.
 
 ---
 
-### Phase 2: Background & Experience (8-10 minutes)
+## The Interview Flow (Six Phases)
 
-Establish the professional foundation. Listen for depth, gaps, and transferable skills.
+### Phase 1: Background & Experience (8-10 minutes)
 
-**Start with the overview:**
-1. "Tell me about your professional background. What have you done for work?"
+Use AskUserQuestion for the first question:
+
+**Re-ground:** We're starting with your professional foundation. This helps me understand what you bring to the table and what experiences shape your thinking.
+
+**Simplify:** Tell me about your work history — the jobs you've had, the industries you've worked in, and the roles you've played. Don't polish it, just walk me through it.
+
+**Recommend:** RECOMMENDATION: Be specific about companies, industries, and time periods. This helps me see your depth vs. breadth. Completeness: 9/10 if you include: company size, type (B2B/B2C/enterprise), and duration.
+
+**Options:**
+- A) "I have a traditional career history — let me walk you through it"
+- B) "I've bounced around quite a bit"
+- C) "I'm early in my career"
+- D) "I'm coming from academia/government/non-profit"
+
+**Then ask one at a time:**
+
+1. **"Tell me about your professional background. What have you done for work?"**
    - Listen for: technical depth, business experience, domain expertise, range of roles
-   - **Follow-up if vague:** "When you say you were in marketing, what kind of marketing? What size companies? B2B or B2C?"
-   - **Follow-up if they jump to the startup:** "Got it. Before the startup, what was your last job?"
+   - Follow-up if vague: "When you say marketing, what kind? B2B/B2C? Company size?"
+   - Follow-up if they jump to startup: "Got it. Before the startup, what was your last job?"
 
-2. "How many years have you been working professionally?"
-   - This tells you if they're a seasoned veteran or breaking out early.
+2. **"How many years have you been working professionally?"**
+   - This tells you if they're a seasoned veteran or breaking out early
 
-3. "Have you started a company before? If so, what happened?"
-   - **If yes:** "What did you learn? What would you do differently this time?"
-   - **If no:** "Are you nervous about being a first-time founder, or excited?"
-   - **Listen for:** humility, learning orientation, or overconfidence
+3. **"Have you started a company before? If so, what happened?"**
+   - If yes: "What did you learn? What would you do differently this time?"
+   - If no: "Are you nervous about being a first-time founder, or excited?"
+   - Listen for: humility, learning orientation, or overconfidence
 
-4. "How deep is your expertise in the space you're exploring now?"
-   - **Probe:** "Could you teach me the fundamentals of your industry in 10 minutes? Or are you still learning?"
+4. **"How deep is your expertise in the space you're exploring now?"**
+   - Probe: "Could you teach me the fundamentals of your industry in 10 minutes? Or are you still learning?"
    - This reveals if they're domain experts or outsiders. Both can win, but they face different risks.
 
-**Archetype clue:** Are they technical? Business-minded? Operator type? Researcher? Visionary? Start forming hypotheses.
+**Synthesize aloud:** "So you've spent [X years] in [industry], with roles ranging from [A] to [B]. You're [first-time/serial] founder coming into [space]. Does that land?"
 
 ---
 
-### Phase 3: Builder Archetype Assessment (10-12 minutes)
+### Phase 2: Builder Archetype Assessment (10-12 minutes)
 
-This is the heart of the profiling. Use targeted questions to identify their archetype(s).
+This is the heart of the profiling. Use AskUserQuestion for each archetype dimension:
 
-**The Technical Builder** — Strong engineering, weak on business/sales
-- Ask: "If you had to pick, are you stronger on the product/technical side or the business/sales side?"
-- "Who's going to do the sales? The fundraising? The operations?"
-- "How comfortable are you talking to customers? Actually getting in front of them and selling?"
+**Re-ground:** Now I want to understand your natural strengths and where you're weakest. Every founder is a blend of archetypes — some are more technical, some are better at business, some are operators, some are dreamers.
 
-**The Visionary** — Big ideas, needs help with execution and discipline
-- Ask: "Tell me about your idea. What makes you excited about it?"
-- *Listen for: Grand vision, big picture thinking, maybe vague on details.*
-- "Walk me through your first 6 months. Week by week, what are you going to do?"
-- *Listen for: Ability to break vision into steps, or hand-wavy-ness.*
+**Simplify:** I'm going to ask you a few questions about your strengths and weaknesses. Be honest about what you're great at and what you're not. We'll use this to know where to push you hardest and where to get you support.
 
-**The Operator** — Great at process, execution, management. May lack creative vision.
-- Ask: "What's your idea?"
-- *Listen for: Tight execution plan but maybe incremental vision.*
-- "What would make this company special or different, not just executed better?"
-- *If they struggle with this, they might be an Operator without the Vision.*
+**Recommend:** RECOMMENDATION: Answer based on your actual performance, not what you think you should be good at. That's way more useful. Completeness: 10/10 for brutal honesty.
 
-**The Domain Expert** — Deep industry knowledge, new to building products
-- Ask: "How long have you been in this industry?"
-- "What problem do you see that others miss?"
-- "How would building a product be different from your current career?"
+**Options:**
+- A) "I'm ready, ask the archetype questions"
+- B) "Can you define the archetypes first?"
+- C) "I'm worried I don't fit any of these"
 
-**The Hustler** — Great at selling, networking, moving fast. May cut corners on product quality.
-- Ask: "Tell me how you'd go about getting your first customers. Walk me through it."
-- *Listen for: Confidence, sales instinct, maybe glossing over the product itself.*
-- "What's your definition of a minimum viable product? What's the smallest thing you'd ship?"
+**Ask one question at a time:**
 
-**The Researcher** — Data-driven, methodical, systematic. May over-analyze and under-ship.
-- Ask: "How do you make decisions? Do you trust your gut or do you need data?"
-- "What's your biggest fear about starting this company?"
-- "How do you know when you have enough information to move forward?"
+1. **"If you had to pick, are you stronger on the product/technical side or the business/sales side?"**
+   - Follow-up: "Who's going to do the sales? The fundraising? The operations?"
+   - Follow-up: "How comfortable are you talking to customers? Getting in front of them and selling?"
 
-**After these questions, synthesize aloud:**
-> "So if I'm hearing this right, you're strongest on the [ARCHETYPE], but you're weaker on [ARCHETYPE]. Does that land?"
+2. **"Tell me about your idea. What makes you excited about it?"**
+   - Listen for: Grand vision vs. specific execution
+   - Follow-up: "Walk me through your first 6 months. Week by week, what are you going to do?"
+   - Listen for: Ability to break vision into steps, or vagueness
+
+3. **"How do you make decisions? Do you trust your gut or do you need data?"**
+   - Follow-up: "Give me an example. What's a tough decision you made recently?"
+   - Listen for: Confident vs. agonizing, collaborative vs. solo, data-driven vs. instinct
+
+4. **"Tell me how you'd go about getting your first customers. Walk me through it."**
+   - Listen for: Confidence, sales instinct, understanding of GTM
+   - Follow-up: "What's your definition of MVP? What's the smallest thing you'd ship?"
+
+5. **"What's your biggest fear about starting this company?"**
+   - Listen for: What they're actually worried about. This reveals risk tolerance and blind spots
+
+**Synthesize aloud:**
+> "So if I'm hearing this right, you're strongest on [ARCHETYPE], you're weaker on [ARCHETYPE], and your blind spot looks like [PATTERN]. Does that land?"
 
 ---
 
-### Phase 4: Strengths, Gaps & Support System (8-10 minutes)
+### Phase 3: Strengths, Gaps & Support System (8-10 minutes)
 
-Now zoom into what they bring and what they need.
+Now zoom into what they bring and what they need. Ask one at a time:
 
-1. "If you could only bring three strengths to this company, what would they be?"
-   - Listen for specificity and self-awareness.
+**Re-ground:** We're homing in on what you actually bring and what you need to address. This shapes everything about how the bootcamp will work with you.
 
-2. "What's the one skill or area you know you're weakest in?"
-   - **Critical question.** Listen for: honesty vs. defensive responses.
-   - "How do you plan to address that gap? Co-founder? Hire? Advisor?"
+**Simplify:** I want to know your top strengths, your biggest weakness, and your support network. This helps us calibrate where to push you and where to get you help.
 
-3. "Who's your support system? Do you have a co-founder? Family that's behind you? Mentors?"
+**Recommend:** RECOMMENDATION: Be specific and honest. "I'm good at execution" is less useful than "I've shipped three products in two years, which means I know how to cut scope." Completeness: 9/10 for concrete examples.
+
+**Options:**
+- A) "Ask the questions"
+- B) "I'm worried I don't have strengths"
+- C) "I'd rather talk about my weaknesses first"
+
+**Ask one at a time:**
+
+1. **"If you could only bring three strengths to this company, what would they be?"**
+   - Listen for specificity and self-awareness
+   - Follow-up if vague: "What concrete thing have you done that shows that strength?"
+
+2. **"What's the one skill or area you know you're weakest in?"**
+   - Critical question. Listen for: honesty vs. defensive responses
+   - Follow-up: "How do you plan to address that gap? Co-founder? Hire? Advisor? Learn?"
+
+3. **"Who's your support system? Do you have a co-founder? Family that's behind you? Mentors?"**
    - Listen for: isolation vs. network, family support, experienced advisors
-   - "Are they going to push you or just support you?"
+   - Follow-up: "Are they going to push you to be better or just support you emotionally?"
 
-4. "What would make you quit? Like, what's the thing that would make you walk away?"
-   - *This is revealing. Fear of poverty? Fear of disappointing family? Impatience? Exhaustion?*
-
----
-
-### Phase 5: Risk Profile (8-10 minutes)
-
-This shapes how hard we can push. Different founders can bear different loads.
-
-1. **Financial runway:**
-   - "How many months of runway do you have? Like, how long can you go without income?"
-   - "Do you have dependents or major financial obligations?"
-   - "Are you working a day job right now?"
-   - *Listen for: cushion vs. cliff.*
-
-2. **Time commitment:**
-   - "Are you going full-time on this, or working nights/weekends?"
-   - "If part-time, how much time can you actually put in per week?"
-   - "Is that going to change in the next 6 months?"
-
-3. **Risk tolerance:**
-   - "On a scale of 'I need to be cautious' to 'I'll burn the ships,' where are you?"
-   - "What's keeping you up at night?"
-   - *Listen for: financial pressure, family pressure, fear of wasting time, or pure ambition.*
-
-4. **Support system (revisit):**
-   - "If things go sideways, who's got your back? Who could you call at 2 AM?"
-   - "Is your family supportive of the risk you're taking?"
-
-**Synthesize:** "So your runway is about X months, you're going Y% time, and your risk tolerance is Z. That means we need to be realistic about pace."
+4. **"What would make you quit? Like, what's the thing that would make you walk away?"**
+   - This is revealing. Fear of poverty? Fear of disappointing family? Impatience? Exhaustion?
+   - Follow-up: "Is that fear driving you toward this, or holding you back?"
 
 ---
 
-### Phase 6: Working Style & Motivation (10-12 minutes)
+### Phase 4: Risk Profile (8-10 minutes)
 
-How they think, how they operate, why they do this.
+This shapes how hard we can push. Different founders can bear different loads. Ask one at a time:
 
-1. **Decision-making:**
-   - "When you have to make a hard decision, what do you do? Trust your gut? Gather data? Ask others?"
-   - "Give me an example. What's a tough call you've made recently?"
-   - *Listen for: confident vs. agonizing, collaborative vs. solo, data-driven vs. instinct.*
+**Re-ground:** Now I need to understand your financial and time constraints, and how much risk you can actually take. This determines the pace of the bootcamp and what we're realistic about.
 
-2. **Pace:**
-   - "Do you prefer to move fast and learn from mistakes, or plan carefully?"
-   - "What's your relationship with failure?"
-   - *Listen for: move-fast-and-break-things vs. methodical vs. perfectionist.*
+**Simplify:** How much time and money do you have to work with? What's your actual runway? Are there dependents or financial obligations hanging over you? Are you full-time or part-time? This all shapes how fast we can go.
 
-3. **Feedback & criticism:**
-   - "How do you handle criticism? Does it motivate you or deflate you?"
-   - "Tell me about a time someone told you something hard to hear. How did you react?"
-   - *This predicts how well they'll handle the rigor of the bootcamp.*
+**Recommend:** RECOMMENDATION: Be precise about months of runway and hours per week. Vague answers here cause problems later. Completeness: 10/10 for exact numbers.
 
-4. **Communication style:**
-   - "How do you prefer to communicate? Lots of meetings? Async? Direct?
-   - "When things are tense, do you address them head-on or let them cool down?"
+**Options:**
+- A) "I have substantial runway"
+- B) "I'm running tight"
+- C) "I'm part-time for now"
+- D) "I need to know what realistic means"
 
-5. **Motivation:**
-   - "Why are you doing this? And be honest — is it money? Impact? Freedom? Proving something? Solving your own problem?"
-   - *Listen for: authenticity, not what they think you want to hear.*
-   - "What does success look like for you? What are you trying to build?"
-   - "What would make this all worth it?"
+**Ask one at a time:**
+
+1. **"How many months of runway do you have? Like, how long can you go without income?"**
+   - Follow-up: "Do you have dependents or major financial obligations?"
+   - Follow-up: "Are you working a day job right now?"
+   - Listen for: cushion vs. cliff
+
+2. **"Are you going full-time on this, or working nights/weekends?"**
+   - If part-time: "How much time can you actually put in per week?"
+   - Follow-up: "Is that going to change in the next 6 months?"
+
+3. **"On a scale of 'I need to be cautious' to 'I'll burn the ships,' where are you?"**
+   - Follow-up: "What's keeping you up at night?"
+   - Listen for: financial pressure, family pressure, fear of wasting time, or pure ambition
+
+4. **"If things go sideways, who's got your back? Who could you call at 2 AM?"**
+   - Follow-up: "Is your family supportive of the risk you're taking?"
+
+**Synthesize:** "So your runway is about X months, you're going Y% time, and your risk tolerance is Z. That means we need to be realistic about pace. Does that match how you feel?"
+
+---
+
+### Phase 5: Working Style & Motivation (10-12 minutes)
+
+How they think, how they operate, why they do this. Ask one at a time:
+
+**Re-ground:** Last section. I want to understand how you work — how you make decisions, how fast you move, how you handle feedback, and what actually motivates you.
+
+**Simplify:** This helps me know how hard I can push you, what kind of feedback will land, and what to watch for when you start building.
+
+**Recommend:** RECOMMENDATION: Again, be honest. If you're someone who needs data before moving, say that. If you move fast and learn, say that. I'll calibrate my coaching to match. Completeness: 10/10 for authenticity.
+
+**Options:**
+- A) "Ask the questions"
+- B) "I'm not sure how I work"
+- C) "I think I have a mixed style"
+
+**Ask one at a time:**
+
+1. **"When you have to make a hard decision, what do you do? Trust your gut? Gather data? Ask others?"**
+   - Follow-up: "Give me an example. What's a tough call you've made recently?"
+   - Listen for: confident vs. agonizing, collaborative vs. solo, data-driven vs. instinct
+
+2. **"Do you prefer to move fast and learn from mistakes, or plan carefully?"**
+   - Follow-up: "What's your relationship with failure?"
+   - Listen for: move-fast-and-break-things vs. methodical vs. perfectionist
+
+3. **"How do you handle criticism? Does it motivate you or deflate you?"**
+   - Follow-up: "Tell me about a time someone told you something hard to hear. How did you react?"
+   - This predicts how well they'll handle the bootcamp's rigor
+
+4. **"How do you prefer to communicate? Lots of meetings? Async? Direct?"**
+   - Follow-up: "When things are tense, do you address them head-on or let them cool down?"
+
+5. **"Why are you doing this? And be honest — is it money? Impact? Freedom? Proving something? Solving your own problem?"**
+   - Listen for: authenticity, not what they think you want to hear
+   - Follow-up: "What does success look like for you? What are you trying to build?"
+   - Follow-up: "What would make this all worth it?"
+
+---
+
+---
+
+## Phase 6: Profile Synthesis & Artifact Generation (30-45 minutes)
+
+After all five phases, use AskUserQuestion to confirm accuracy before writing artifacts:
+
+**Re-ground:** I've asked you a lot of questions. Now I'm going to synthesize what I heard and write it down. Before I do, I want to make sure I got it right.
+
+**Simplify:** I'm going to do a sense-check: tell you what I heard about who you are, how you work, what you bring, and what's going to be hardest for you. You tell me if I missed anything or got it wrong.
+
+**Recommend:** RECOMMENDATION: Take your time. This profile is going to drive every interaction you have with me for the next several months. Make sure it's accurate. Completeness: 10/10 for catching mischaracterizations.
+
+**Options:**
+- A) "Yes, do the synthesis"
+- B) "I want to clarify something first"
+- C) "I'm worried you got my archetype wrong"
+
+**Then write the profiles** (see below for templates).
 
 ---
 
@@ -423,17 +499,26 @@ These are the moments where the bootcamp says "No, you need to go deeper."
 - **Synthesize aloud.** "So what I'm hearing is..." Check if it lands.
 - **Name archetypes playfully.** "You sound like a mix of Operator and Researcher."
 - **Acknowledge tension.** "I know this is a lot of questions. We're almost done, and this matters."
+- **Push twice:** First answer is polished, third answer is real. Ask follow-ups to get to truth.
 
 ---
 
-## After the Interview
+## Phase 7: Callback & Handoff
 
-Spend 30-45 minutes writing the profiles. They should be insightful enough that someone else reading them feels like they KNOW this founder.
-
-Then schedule a 15-minute callback to share the profile and ask: "Does this feel right? What did I miss?"
+Schedule a 15-minute callback to share the profiles and ask: "Does this feel right? What did I miss?"
 
 This callback builds trust and lets them correct you. It also gives you a chance to ask one more round of follow-up questions you missed.
 
-Finally, hand them the FOUNDER-PRESCRIPTION.md and say:
+Then hand them the FOUNDER-PRESCRIPTION.md and say:
 
 > "This is our commitment to you. This is how we're going to work together, what we're going to push on, where we'll support you, and where we might say 'no.' It's not written in stone — we'll revisit it in 4 weeks. But for now, this is our pact."
+
+---
+
+## Completion Status
+
+**DONE** — Both FOUNDER-PROFILE.md and FOUNDER-PRESCRIPTION.md are complete and shared with the founder.
+
+**Next Step:** Founder proceeds to idea-intake to start Stage 1 of the pipeline.
+
+Return to z-combinator orchestrator for routing to next skill.

@@ -8,40 +8,61 @@ trigger_phrases:
   - customer interviews
   - stage 2
   - validate with customers
+benefits-from:
+  - idea-intake
+  - market-research
+feeds-into:
+  - evidence-review
 ---
 
 # Customer Discovery: The Mom Test Interview Playbook
 
-## The Core Principle
+## Mission
 
-**The Mom Test Rule:** Never ask someone if your idea is good — they'll lie to be nice. Instead, ask about their life, their problems, and their behavior.
+You've articulated your idea and researched the market. Now you need to talk to real customers and extract the truth about whether they actually have the problem you think they have.
 
-Your job is not to get validation. Your job is to extract truth. If you ask "Would you use this?" they'll say yes because they're polite. If you ask "How much time do you waste on X every week?" they'll give you a real answer.
-
----
-
-## Step 1: Gather Your Intelligence
-
-Read these files if they exist:
-- INTAKE.md
-- MARKET-RESEARCH.md
-- FOUNDER-PROFILE.md
-
-These tell me what problem you think you're solving and who you think you're solving it for. Now I'm going to challenge that.
+The core principle: **Never ask someone if your idea is good — they'll lie to be nice.** Instead, ask about their life, their problems, and their actual behavior.
 
 ---
 
-## Step 2: Generate 10 Truth-Extracting Interview Questions
+## Phase 0: Prerequisites & Intake
 
-These are NOT validation questions. They are behavioral questions that reveal what people actually do, not what they say they'd do.
+Use AskUserQuestion:
 
-**BAD QUESTIONS (BANNED):**
-- "Would you use this?" → They'll say yes.
-- "How much would you pay for X?" → Before they even believe the problem exists.
-- "Is this a good idea?" → Everyone says their mom's ideas are good.
-- "Do you have this problem?" → Leading. They'll agree if you sound convincing.
+**Re-ground:** Stage 2, customer discovery. You've done idea intake and market research. Now you're going to interview 5-10 real customers using The Mom Test methodology — structured interviews designed to extract truth, not validation.
 
-**GOOD QUESTIONS (REQUIRED):**
+**Simplify:** You'll talk to customers about their actual problems, current workarounds, and pain points. Not about whether your idea is good. Your job is to listen for patterns and evidence of real demand.
+
+**Recommend:** RECOMMENDATION: Have INTAKE.md and MARKET-RESEARCH.md ready. These shape your interview approach. Completeness: 10/10 if you have both artifacts.
+
+**Options:**
+- A) "I have my artifacts ready, let's build the interview plan"
+- B) "I want to refresh on The Mom Test first"
+- C) "I'm not sure how to find customers"
+
+**If artifacts missing:** Route back to idea-intake or market-research first.
+
+**If ready:** Proceed to Phase 1.
+
+---
+
+## Phase 1: The Mom Test Principle & Anti-Patterns
+
+**The Core Rule:** Never ask if your idea is good. They'll say yes to be nice.
+
+Instead:
+- Ask about their actual behavior: "Tell me about the last time you hit this problem."
+- Ask what they currently do: "What did you do to solve it?"
+- Ask for specifics: "How much time/money did you spend?"
+- Ask about alternatives: "Did you try anything else?"
+
+**Bad questions (BANNED):**
+- "Would you use this?" → Leads to "yes"
+- "How much would you pay?" → Before they believe in the problem
+- "Is this a good idea?" → Everyone's polite
+- "Do you have this problem?" → Too leading
+
+**Good questions (REQUIRED):**
 - "Tell me about the last time you [experienced the problem]."
 - "What did you do to solve it?"
 - "How much time/money/effort did you spend?"
@@ -50,109 +71,239 @@ These are NOT validation questions. They are behavioral questions that reveal wh
 - "What would the perfect solution look like?"
 - "Why haven't you solved this yet?"
 
-I will generate 10 specific, situation-based questions tailored to YOUR problem and target customer.
+---
+
+## Phase 2: Generate Interview Questions
+
+Use AskUserQuestion:
+
+**Re-ground:** I'm going to generate 10 specific interview questions tailored to YOUR problem and target customer (from INTAKE.md). These are behavioral questions that extract truth, not leading questions that get you validation.
+
+**Simplify:** For each question, I'll explain why it extracts truth (not opinion) and what signals to listen for. You'll use these in real interviews.
+
+**Recommend:** RECOMMENDATION: These are starting points. You'll adapt them based on the conversation. Good interviews follow a loose flow, not a rigid script. Completeness: 10/10 if you can follow the question logic and improvise follow-ups.
+
+**Options:**
+- A) "Generate the questions"
+- B) "I want to customize some questions first"
+- C) "I'm worried these won't work"
+
+**Then generate:**
+
+```markdown
+# Customer Discovery Interview Questions
+
+## Your Target Customer
+[From INTAKE.md: name, title, problem they have]
+
+## 10 Truth-Extracting Questions
+
+1. **Opening & Rapport**
+   - "How did you end up in [their role]?"
+   - Why: Builds trust, gets them talking naturally, reveals context
+
+2. **Past Behavior (Critical)**
+   - "Tell me about the last time you struggled with [problem]."
+   - Why: Reveals if problem is real, how acute, and when it happened
+   - Listen for: Specific stories, emotions, frequency
+
+3. **Current Workaround**
+   - "What did you do to handle it?"
+   - Why: Shows their current solution. Everyone has one.
+   - Listen for: Tools, manual processes, effort required
+
+4. **Effort & Cost**
+   - "How much time/money did you spend on solving it?"
+   - Why: Quantifies pain. Big pain = they'd pay to solve it.
+   - Listen for: Specific numbers (not "a lot")
+
+5. **Alternatives Tried**
+   - "Did you try anything else? What happened?"
+   - Why: Reveals what they've already tested
+   - Listen for: Why existing solutions don't work perfectly
+
+6. **Ongoing Search**
+   - "Are you still looking for a better solution?"
+   - Why: Reveals if this is active pain or solved pain
+   - Listen for: "Yes, constantly" vs. "nah, it's fine"
+
+7. **Ideal Solution**
+   - "What would the perfect solution look like?"
+   - Why: Without leading, asks about their dream state
+   - Listen for: Specific features vs. vague wishes
+
+8. **Why Unsolved**
+   - "Why do you think nobody's solved this yet?"
+   - Why: Reveals what they think is hard about the problem
+   - Listen for: Market dynamics, technical barriers, timing
+
+9. **Introduce Your Idea (CAREFULLY)**
+   - "We're exploring [vague description]. What would make this valuable to you?"
+   - Why: Now you can test if your solution fits, without leading
+   - Listen for: Specific feedback, not "that sounds cool"
+
+10. **Close & Follow-up**
+    - "Would I be able to check in with you in a few weeks?"
+    - Why: Keeps the door open for next conversation
+    - Listen for: Willingness. Real interest = yes without hesitation
+
+## Interview Flow
+- Don't follow this as a script. It's a conversation flow.
+- Questions 1-8 are about THEM and their current situation.
+- Only introduce your idea in Question 9, after you understand them.
+- Record or take verbatim notes.
+- Each interview: 20-30 minutes.
+```
+
+**Move to Phase 3.**
 
 ---
 
-## Step 3: Build Your Target Interview List
+## Phase 3: Build Target Interview List
 
-You need to talk to 5-10 people. Not your friends. Not your coworkers. Not people who owe you favors.
+Use AskUserQuestion:
 
-**Target criteria:**
-- Where do they naturally congregate? (Online communities, Slack groups, LinkedIn, industry forums, conferences)
-- What's your credible reason to reach out? (Not "I'm building something, want to talk?" but "I'm researching X, your post about Y caught my attention")
-- In what order should you talk to them? (Start with least important to warm up, save your best leads for when you're better at interviewing)
-- Cold outreach template: How do you contact them without sounding like you're pitching?
+**Re-ground:** Now you need to find 5-10 real customers. Not your friends. Not coworkers. Not people who owe you favors.
 
-I will create a prioritized list with 3-5 specific people/communities to target first.
+**Simplify:** Where do these people congregate? Online communities? LinkedIn groups? Industry conferences? How do you reach them credibly? What's your honest opening line that isn't a pitch?
+
+**Recommend:** RECOMMENDATION: Start with 3-5 specific people or communities you'll reach out to this week. Prioritize strangers over friends (70% should be strangers). Completeness: 10/10 if you have specific names/communities and a credible outreach angle.
+
+**Options:**
+- A) "I have a target list ready"
+- B) "I need help finding where they congregate"
+- C) "I'm worried I won't find enough people"
+
+**Then create:**
+
+```markdown
+# Customer Interview Target List
+
+## Primary Target Customer
+[From INTAKE.md]
+
+## Where They Congregate
+1. [Online community/forum/Slack group] - How to join/access?
+2. [LinkedIn groups or searches] - How to find and filter?
+3. [Conferences or events] - Which ones? When?
+4. [Direct references] - Who can introduce you?
+
+## Prioritized Outreach List
+
+### Tier 1: First Interviews (Warm up interviews)
+[3 people you find via online communities, easier to reach cold]
+- [Name/Profile] — Where you found them, cold outreach angle
+
+### Tier 2: Key Interviews (Best leads)
+[2-3 people who are highest quality matches for your customer definition]
+- [Name/Profile] — How to reach them, mutual connection angle
+
+### Tier 3: Backup Interviews (If you need more)
+[Additional people if patterns aren't clear]
+- [Name/Profile] — Alternative outreach
+
+## Cold Outreach Template
+"Hi [Name], I noticed your post about [X], and I'm researching [problem]. Would you have 20 minutes this week to chat about how you handle [specific challenge]?"
+
+[Not: "I'm building something cool, want to chat?"]
+
+## Interview Logistics
+- Target: 5-10 interviews minimum
+- At least 70% should be strangers/cold outreach
+- Each: 20-30 minutes
+- Record or take verbatim notes
+- Spread over 2-3 weeks
+```
+
+**Move to Phase 4.**
 
 ---
 
-## Step 4: Anti-Patterns (What Will Destroy Your Evidence)
+## Phase 4: Anti-Patterns & Scorecard
 
-You will make mistakes. Here are the common ones:
+Show anti-patterns that destroy evidence:
+
+```markdown
+# Common Interview Anti-Patterns
 
 | Anti-Pattern | Why It Fails | Fix |
 |---|---|---|
-| Only interviewing friends | They want to be nice. They'll politely agree with everything. | 70% of interviews must be strangers. |
-| Pitching during interviews | You talk for 30 mins, they listen politely. You learn nothing. | Talk for 10%, listen for 90%. Ask follow-ups. |
-| Asking hypotheticals | "If we built X, would you use it?" → They'll say yes. | Ask about past behavior only. "Have you...?" not "Would you...?" |
-| Long interviews | You get tired, they get bored, you miss signals. | 20-30 minutes max. |
-| No note-taking | You'll forget what they said. | Record (with permission) or take verbatim notes. |
-| Interviewing users of your competitor | They might switch for free, that's not demand. | Interview people who haven't solved the problem yet. |
-| Feeling good after each interview | Confirmation bias. You heard what you wanted. | Look for patterns across 5+ interviews before celebrating. |
+| Only friends | They want to be nice, agree with everything | 70% strangers minimum |
+| Pitching during interviews | You talk 30 mins, they listen politely, you learn nothing | Talk 10%, listen 90%, ask follow-ups |
+| Asking hypotheticals | "Would you use this?" → They say yes to be polite | Ask about past behavior: "Have you...?" not "Would you...?" |
+| Long interviews | You get tired, they get bored, signals get missed | 20-30 minutes max |
+| No note-taking | You forget what they said, remember your interpretation | Record (with permission) or verbatim notes |
+| Interviewing competitor users | They might switch for free, that's not demand | Interview people who haven't solved it yet |
+| Feeling good after each interview | Confirmation bias, you hear what you want | Wait for patterns across 5+ interviews before celebrating |
+```
+
+Show evidence scorecard:
+
+```markdown
+# Evidence Scorecard: What Counts?
+
+## Real Evidence of Demand ✅ (High Signal)
+- Someone offered to pay or asked for early access (unsolicited)
+- Someone is actively trying to solve this problem (spending time/money on existing solutions)
+- Someone introduced you to other people with the same problem
+- Someone asked YOU follow-up questions about how you'd solve it
+- Same core problem mentioned by 3+ strangers unprompted
+- Someone changed their behavior or workflow based on talking to you
+
+## Weak Evidence ⚠️ (Polite Interest)
+- "That sounds interesting"
+- "I'd love to stay updated"
+- "That could be useful"
+- "Let me know when you launch"
+- "I'll definitely check it out"
+- Only 1 person mentioned the problem, nobody else did
+
+## No Evidence ❌ (Sounds Polite)
+- "Cool idea"
+- General enthusiasm without specifics
+- Just agreeing with you
+```
+
+Use AskUserQuestion:
+
+**Re-ground:** You now understand the anti-patterns that destroy evidence and the signal vs. noise scorecard. This is how you'll evaluate each interview as you conduct them.
+
+**Simplify:** As you interview people, you'll track what they say in EVIDENCE-LOG.md. You'll mark each statement as high signal, weak signal, or no signal. By interview 5, you'll see patterns.
+
+**Recommend:** RECOMMENDATION: Create EVIDENCE-LOG.md now and fill it in after each interview. This trains you to listen for signal vs. noise in real-time. Completeness: 10/10 if you update it within hours of each interview while memory is fresh.
+
+**Options:**
+- A) "I understand, I'm ready to start interviews"
+- B) "I want to do a practice interview first"
+- C) "I'm worried my questions will be too leading"
+
+**Move to Phase 5.**
 
 ---
 
-## Step 5: Evidence Scorecard
+## Phase 5: The Hard Stop
 
-This is your grading rubric. At the end of 5-10 interviews, you'll score each piece of evidence.
+**This is where the pipeline STOPS until you complete interviews and evidence collection.**
 
-**Real Evidence of Demand (High Signal):**
-- ✅ Someone offered to pay or asked for early access (unsolicited)
-- ✅ Someone is actively trying to solve this problem (spending time/money on existing solutions)
-- ✅ Someone introduced you to other people who have the problem
-- ✅ Someone asked you follow-up questions about how you'd solve it (initiated deeper conversation)
-- ✅ Same problem mentioned by 3+ strangers unprompted
-- ✅ Someone changed their behavior or workflow because of your suggestion
+Use AskUserQuestion:
 
-**Weak Evidence (Polite Interest):**
-- ⚠️ "That sounds interesting"
-- ⚠️ "I'd love to stay updated"
-- ⚠️ "That could be useful"
-- ⚠️ "Let me know when you launch"
-- ⚠️ "I'll definitely check it out"
-- ⚠️ One person mentioned the problem, but nobody else did
+**Re-ground:** Before you proceed to the next stage (MVP scoping), you MUST complete 5-10 real customer interviews and document what you learned in EVIDENCE-LOG.md.
 
-**No Evidence (Sounds Polite):**
-- ❌ "Cool idea"
-- ❌ General enthusiasm without specifics
-- ❌ Agreeing with you out of politeness
+**Simplify:** You do interviews. You fill in EVIDENCE-LOG.md. You come back when done. Then evidence-review will analyze what you found and either green-light you to Stage 3 or tell you to do more interviews.
+
+**Recommend:** RECOMMENDATION: Block out this week. Schedule interviews for the next 10-14 days. Hit the goal of 5+ strangers before you come back. Completeness: 10/10 if you have 5-10 interviews completed and logged.
+
+**Options:**
+- A) "I'm ready, I'll go do the interviews"
+- B) "Can I do this asynchronously?"
+- C) "I need help reaching out to people"
 
 ---
 
-## Step 6: Your Homework Assignment
+## Completion Status
 
-You MUST conduct 5-10 real interviews before proceeding. No exceptions. This is not optional.
+**RETURN WHEN:** You have completed 5-10 customer interviews and documented them in EVIDENCE-LOG.md.
 
-**Rules:**
-- Minimum 5 interviews. Ideal: 7-10.
-- At least 70% must be people you didn't know before.
-- Each interview is 20-30 minutes.
-- You record (audio) or write verbatim notes.
-- You ask follow-up questions. You don't pitch.
-- After each interview, you update EVIDENCE-LOG.md with what you learned.
+**Next Step:** Proceed to evidence-review skill for adversarial analysis of your interview quality and evidence.
 
----
-
-## Step 7: The Pipeline Pause
-
-**This is where your Z-Combinator journey STOPS until you have evidence.**
-
-You do not proceed to Lean Canvas. You do not scope your MVP. You do not start building.
-
-You complete the interviews and come back with EVIDENCE-LOG.md filled in.
-
-Then the next skill (evidence-review) will analyze what you found and either:
-- **Green light:** You have real evidence. You proceed to Stage 3.
-- **Red light:** You have confirmation bias and weak evidence. You do more interviews or pivot your customer hypothesis.
-
----
-
-## Push Back on Skipping This
-
-If you're thinking "My friends say it's a great idea, can I skip the real interviews?" — No.
-
-If you're thinking "I'm confident in my idea, I don't need to talk to 10 people" — No.
-
-If you're thinking "I'll interview people AFTER I build the MVP" — No. That's building first, learning later. It's how 90% of startups fail.
-
-**Every founder who skipped customer interviews built something nobody wanted.** That's the #1 cause of startup death. You're doing the interviews.
-
----
-
-## Next Step
-
-Run your interviews. Fill in EVIDENCE-LOG.md as you go. Come back when you have evidence.
-
-Then we run adversarial review.
+Return to z-combinator orchestrator for routing.

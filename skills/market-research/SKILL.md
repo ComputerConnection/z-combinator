@@ -7,193 +7,259 @@ triggers:
   - who else does this
   - market size
   - stage 1 research
+benefits-from:
+  - idea-intake
+feeds-into:
+  - gate-evaluator
 ---
 
 # Market Research: Adversarial Competitive Intelligence
 
-You've nailed your idea intake. Now comes the hard truth: **the market is probably telling you NO until proven otherwise.**
+You've articulated your idea. Now comes the hard truth: **the market is probably saying NO until proven otherwise.**
 
 This skill will:
 1. Map every existing solution (direct competitors, adjacent plays, DIY alternatives)
 2. Explain why each competitor hasn't already won
-3. Dig through the graveyard — find companies that tried this and died, and learn why
-4. Size the market with brutal honesty (not "1% of a trillion-dollar market" math)
+3. Dig through the graveyard — find companies that tried and died, and learn why
+4. Size the market with brutal honesty (not "1% of trillion-dollar market" math)
 5. Identify regulatory or legal landmines
-6. Challenge you on every finding
+6. Challenge you directly on every finding
 
-Output: **MARKET-RESEARCH.md** — a competitive matrix, graveyard analysis, honest TAM/SAM/SOM, and an overall verdict.
-
----
-
-## Phase 1: Intake Review
-
-First, I need to read what you committed to in idea-intake.
-
-**Do you have INTAKE.md in this session?** If yes, I'll use it. If no, I'll ask you to run idea-intake first — market research only makes sense after you've articulated the real problem and customer.
-
-I'll also check for:
-- **DESIGN-DOC.md** (if you've worked through office-hours)
-- Any context about your specific solution approach
+Output: **MARKET-RESEARCH.md** — a competitive matrix, graveyard analysis, honest TAM/SAM/SOM, and a verdict.
 
 ---
 
-## Phase 2: Competitive Research
+## Phase 0: Prerequisites & Intake Review
 
-I'll search for:
+Use AskUserQuestion:
 
-### 2.1 Direct Competitors
+**Re-ground:** Stage 1, Phase 2. You've articulated your idea. Now we're going to stress-test it against the real market.
+
+**Simplify:** I need to read your INTAKE.md from idea-intake — that's where you articulated the problem, customer, timing, and advantage. Then I'll research competitors, the graveyard of failed attempts, market sizing, and regulatory issues. Then I'll challenge you on all of it.
+
+**Recommend:** RECOMMENDATION: Have INTAKE.md ready. If you don't, run idea-intake first. This only works if we have clarity on the problem. Completeness: 10/10 if you have the artifact ready.
+
+**Options:**
+- A) "I have INTAKE.md ready"
+- B) "I haven't done idea-intake yet"
+- C) "I want to update my INTAKE.md first"
+
+**If NO INTAKE.md:** Route back to idea-intake. Return here after completion.
+
+**If YES:** Proceed to Phase 1.
+
+---
+
+## Phase 1: Competitive Research
+
+I will systematically research:
+
+### 1.1 Direct Competitors
 - Companies solving this exact problem
 - Pricing, feature set, go-to-market, founding story
 - Why they have (or don't have) traction
 
-### 2.2 Adjacent Solutions
+### 1.2 Adjacent Solutions
 - Different approach to the same problem
 - Tooling that partially solves it
 - Industries using similar solutions
 
-### 2.3 DIY Alternatives
+### 1.3 DIY Alternatives
 - Spreadsheets, manual processes, open-source tools
-- Why founders might build it themselves instead of buying
+- Why customers might build it themselves instead of buying
 
-### 2.4 The Graveyard
-- Companies that tried this problem and failed
+### 1.4 The Graveyard
+- Companies that tried this and failed
 - Timing, funding, exit (if any), and lessons
 - Key question: What's different now?
 
-### 2.5 Market Dynamics
+### 1.5 Market Dynamics
 - Pricing landscape — what people actually pay today
 - Market consolidation — are big players already winning?
 - Regulatory barriers — licenses, compliance, data residency
 - Macro headwinds — is the market shrinking?
 
+**As I research, I'll note:**
+- Every competitor I find with founding story and current status
+- Pricing for each solution
+- Why each one might not have won (product gaps? timing? market dynamics?)
+- Whether I find any clear "winner" already owning this space
+
 ---
 
-## Phase 3: Honest Market Sizing
+## Phase 2: Honest Market Sizing
 
-I'll challenge your TAM/SAM/SOM with:
+For TAM/SAM/SOM, I'll calculate and challenge:
 
 **TAM (Total Addressable Market):**
 - Bottom-up: How many people/companies actually have this problem?
-- NOT: "1% of SaaS market = $50B"
-- YES: "There are 500K mid-market companies. 30% use this workflow. = $X market"
+- NOT: "1% of $1 trillion SaaS market = $50B" (lazy)
+- YES: "There are 500K mid-market companies. 30% use this workflow. Average deal $50K. = $7.5B TAM"
 
 **SAM (Serviceable Addressable Market):**
-- Which geographic markets can you actually reach? (Start with one)
+- Which geographic markets can you realistically reach first? (Start with one)
 - Which customer segments can your GTM actually serve?
 - Realistic = 5-10% of TAM, not 50%
 
 **SOM (Serviceable Obtainable Market):**
-- Year 1-3: What's your realistic capture?
-- If you're not realistic here, you're lying to yourself
+- Year 1-3: What's your realistic market capture?
+- Don't lie to yourself here
 
-I'll push back on:
-- Inflated TAM numbers
-- Assumptions without data
-- Market-wide claims without specificity
+**Pushback I'll apply:**
+- Inflated TAM numbers based on industry reports with zero specificity
+- Assumptions without data backing them
+- Market-wide claims without customer count evidence
 
 ---
 
-## Phase 4: Challenge Findings
+## Phase 3: Challenge Findings (Interactive)
 
-For every major competitive finding, I'll ask you directly:
+For every major finding, I'll ask you directly and expect real answers:
 
+Use AskUserQuestion to deliver each finding:
+
+**Re-ground:** [Finding about a competitor, the graveyard, or market dynamics].
+
+**Simplify:** [Explain why this matters for your idea].
+
+**Recommend:** RECOMMENDATION: [How you should respond to this finding]. Completeness: 10/10 if you have a concrete answer, not deflection.
+
+**Options:**
+- A) "[Response A]"
+- B) "[Response B]"
+- C) "I need to think about this"
+
+**Example challenges:**
 - "Company X raised $50M and does exactly this. What's your response?"
 - "Three companies tried this in 2019-2021. All folded. What's different now?"
-- "People aren't paying more than $500/month for this category. How's your unit economics work?"
+- "People aren't paying more than $500/month for this category. How does your unit economics work?"
 - "Regulation has killed three startups in this space. How do you navigate it?"
 
 These aren't rhetorical. You need real answers — not deflection.
 
 ---
 
-## Phase 5: Deliverable — MARKET-RESEARCH.md
+## Phase 4: Synthesis & Market Verdict
 
-Output structure:
+After research and challenge round, use AskUserQuestion to frame verdict:
 
-```
+**Re-ground:** I've researched competitors, the graveyard, market sizing, and regulatory issues. Here's my verdict on this market.
+
+**Simplify:** [Is this a blue ocean, crowded, dominated, or graveyard?] [Why?]
+
+**Recommend:** RECOMMENDATION: Based on market conditions, here's what needs to be true for you to win: [specific conditions]. Completeness: 10/10 if you have a realistic thesis for competitive advantage.
+
+**Options:**
+- A) "I accept this verdict and want to proceed"
+- B) "I want to challenge your research on [specific finding]"
+- C) "This makes me want to pivot"
+
+---
+
+## Phase 5: Artifact Generation
+
+Write MARKET-RESEARCH.md:
+
+```markdown
 # Market Research: [Your Problem Statement]
+
+**Research Date:** [today]
+**Problem:** [From INTAKE.md]
+**Founder's Advantage:** [From INTAKE.md]
+
+---
 
 ## Competitive Landscape
 
 ### Direct Competitors
-| Company | Problem Solved | Pricing | Strengths | Weaknesses | Status |
-| --- | --- | --- | --- | --- | --- |
-| X | ... | ... | ... | ... | ... |
+| Company | Founded | Problem Solved | Pricing | Strengths | Weaknesses | Current Status |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Company] | [Year] | [What problem?] | [Price] | [What's good?] | [What's bad?] | [Alive/Dead] |
 
 ### Adjacent Solutions
-(Same table)
+| Solution | How It Compares | Why It's Not Perfect | Willingness to Upgrade |
+| --- | --- | --- | --- |
+| [Solution] | [What does it do?] | [Why is it partial?] | [Would customers pay for better?] |
 
 ### DIY Alternatives
-(Tools/processes people use instead of buying)
+(What are people using instead of a paid solution? Spreadsheets? Manual processes? Open-source?)
+
+---
 
 ## The Graveyard: Failed Attempts
 
-| Company | Founded | Funding | Exit? | Why It Died | Lessons |
+| Company | Founded | Funding | What Failed | Why | Lessons for You |
 | --- | --- | --- | --- | --- | --- |
-| X | ... | ... | ... | ... | ... |
+| [Company] | [Year] | [$X] | [What didn't work] | [Why] | [What's different?] |
+
+---
 
 ## Market Sizing
 
 ### TAM (Total Addressable Market)
-- Calculation method
-- Bottom-up estimate
-- Size: $X
+**Calculation:** [Bottom-up method]
+**Size:** $[X] billion
+**Breakdown:** [X companies/people × $Y average spend]
 
 ### SAM (Serviceable Addressable Market)
-- Geographic scope
-- Customer segment
-- Size: $X
+**Geographic Scope:** [Start with what? US? Europe? Specific cities?]
+**Customer Segment:** [Which segment can you actually GTM to?]
+**Size:** $[X] million
+**Rationale:** [Why this is realistic for you]
 
 ### SOM (Serviceable Obtainable Market)
-- Year 1 target
-- Year 3 target
-- Rationale
+**Year 1 Target:** $[X] revenue
+**Year 3 Target:** $[X] revenue
+**Rationale:** [How you get there]
+
+---
 
 ## Regulatory & Legal Landscape
 
-(Licenses, compliance, data residency, industry-specific barriers)
+[Licenses? Compliance? Data residency? Industry-specific barriers?]
+
+---
 
 ## Pricing Landscape
 
-- What customers currently pay for similar solutions
-- Pricing model distribution (per-seat, per-transaction, flat, usage-based)
-- Willingness to pay data (from research)
+- **Current WTP:** [What do people currently pay for similar solutions?]
+- **Pricing Models:** [Per-seat? Per-transaction? Flat? Usage-based?]
+- **Price Range:** [From $X/month to $Y/month for similar categories]
+
+---
 
 ## Market Verdict
 
-**Status: [Blue Ocean / Crowded / Dominated / Graveyard]**
+**Status:** [Blue Ocean / Crowded / Dominated / Graveyard]
 
 **Rationale:**
-- Is this solvable?
-- Why would the founder win where others lost (or are winning)?
-- What's the real blocker?
+- Is this solvable? [Yes/No and why]
+- Why would you win where others lost (or are winning)? [Your advantage]
+- What's the real blocker? [The hardest part]
+
+---
 
 ## Founder Challenge Round
 
-(Questions asked, your answers, my pushback)
+**Finding 1:** [Major competitive or market finding]
+Your answer: [What you said]
+My pushback: [Why that's insufficient or strong]
+
+[Repeat for all major findings]
+
+---
+
+## Recommendations for Next Stage
+
+[What you should validate in customer discovery? What risks are highest?]
 ```
 
 ---
 
-## How This Skill Works
+## Completion Status
 
-When you trigger me, I will:
+**DONE** — MARKET-RESEARCH.md is written and verdict is delivered.
 
-1. **Ask:** Do you have INTAKE.md? (Prerequisite)
-2. **Read:** Your problem, customer, advantage, and timing
-3. **Research:** I'll systematically map competitors, the graveyard, pricing, and regulatory
-4. **Challenge:** I'll ask you directly about my findings — you need to respond
-5. **Output:** MARKET-RESEARCH.md with honest assessment and verdict
+**Next Step:** Proceed to customer-discovery skill to talk to real customers and validate (or invalidate) your hypothesis.
 
-This is not cheerleading. The default assumption is that the market is saying NO until you prove otherwise.
-
----
-
-## Let's Begin
-
-**Do you have INTAKE.md from a previous idea-intake session?**
-
-If yes, share it or point me to the file.
-If no, you should run idea-intake first — market research only works if we're clear on the problem.
-
-Once I have that, I'll start researching.
+Return to z-combinator orchestrator for routing.
